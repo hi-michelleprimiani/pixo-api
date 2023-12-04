@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "mtno",
+        "pixo"
+    ],
+    "pylint.args": [
+        "--load-plugins=pylint_django",
+        "--django-settings-module=pixo.settings",
+    ],
+}
+
+
