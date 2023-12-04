@@ -2,4 +2,4 @@ from django.db import models
 
 
 class Condition(models.Model):
-    condition = models.CharField()
+    condition = models.CharField(max_length=300)

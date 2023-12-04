@@ -1,7 +1,11 @@
 {
     "cSpell.words": [
+        "cartitem",
+        "collectiblecategory",
         "mtno",
-        "pixo"
+        "pixo",
+        "pixouser",
+        "userreview"
     ],
     "pylint.args": [
         "--load-plugins=pylint_django",
