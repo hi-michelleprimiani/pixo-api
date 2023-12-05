@@ -1,0 +1,18 @@
+[
+    {
+      "model": "pixoapi.collectible",
+      "pk": 1,
+      "fields": {
+        "seller": 1,
+        "name": "",
+        "description": "",
+        "price": "",
+        "quantity": "",
+        "image_url": "",
+        "material": "",
+        "size": "",
+        "condition": 1,
+        "created_date": "2023-08-10"
+      }
+    }
+]

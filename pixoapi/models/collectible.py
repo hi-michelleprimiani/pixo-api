@@ -2,13 +2,12 @@ from django.db import models
 
 
 class Collectible(models.Model):
-    seller_id = models.ForeignKey(
+    seller = models.ForeignKey(
         "PixoUser", on_delete=models.CASCADE, related_name="seller_collectibles")
     name = models.CharField(max_length=300)
     description = models.CharField(max_length=1000)
     price = models.DecimalField(decimal_places=2, max_digits=7)
     quantity = models.IntegerField(default=1, null=True, blank=True)
-    img_url = models.URLField()
     material = models.CharField(max_length=300)
     size = models.CharField(max_length=300)
     condition = models.ForeignKey(
@@ -16,3 +15,5 @@ class Collectible(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     categories = models.ManyToManyField(
         "Category", through='CollectibleCategory', related_name='collectibles')
+    images = models.ManyToManyField(
+        "Image", through="ImageGallery", related_name="collectibles")
