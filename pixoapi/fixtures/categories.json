@@ -22,20 +22,6 @@
     },
     {
         "model": "pixoapi.category",
-        "pk": 4,
-        "fields": {
-            "label": "Baby"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 5,
-        "fields": {
-            "label": "Clothing"
-        }
-    },
-    {
-        "model": "pixoapi.category",
         "pk": 6,
         "fields": {
             "label": "Garden & Outdoors"
