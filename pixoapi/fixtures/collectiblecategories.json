@@ -1,0 +1,90 @@
+[
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 1,
+        "fields": {
+          "collectible": 1,
+          "category": 1
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 2,
+        "fields": {
+          "collectible": 1,
+          "category": 2
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 3,
+        "fields": {
+          "collectible": 2,
+          "category": 1
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 4,
+        "fields": {
+          "collectible": 2,
+          "category": 2
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 5,
+        "fields": {
+          "collectible": 3,
+          "category": 1
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 6,
+        "fields": {
+          "collectible": 4,
+          "category": 1
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 7,
+        "fields": {
+          "collectible": 5,
+          "category": 2
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 8,
+        "fields": {
+          "collectible": 6,
+          "category": 1
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 9,
+        "fields": {
+          "collectible": 6,
+          "category": 6
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 10,
+        "fields": {
+          "collectible": 6,
+          "category": 8
+        }
+    },
+    {
+        "model": "pixoapi.collectiblecategory",
+        "pk": 10,
+        "fields": {
+          "collectible": 5,
+          "category": 7
+        }
+    }
+]
