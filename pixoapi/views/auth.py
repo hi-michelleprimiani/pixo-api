@@ -4,6 +4,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
+from pixoapi.models import PixoUser
 
 
 @api_view(['POST'])
@@ -54,6 +55,13 @@ def register_user(request):
         last_name=request.data['last_name'],
         email=request.data['email']
     )
+
+    pixo_user = PixoUser()
+    pixo_user.user_id = new_user.id
+    pixo_user.bio = request.data.get('bio')
+    pixo_user.location = request.data.get('location')
+    pixo_user.img_url = request.data.get('img_url')
+    pixo_user.save()
 
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=new_user)

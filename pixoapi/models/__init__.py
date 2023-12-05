@@ -7,3 +7,5 @@ from .condition import Condition
 from .favorite import Favorite
 from .pixouser import PixoUser
 from .userreview import UserReview
+from .image import Image
+from .imagegallery import ImageGallery
