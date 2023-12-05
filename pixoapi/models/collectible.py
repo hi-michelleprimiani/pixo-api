@@ -8,7 +8,6 @@ class Collectible(models.Model):
     description = models.CharField(max_length=1000)
     price = models.DecimalField(decimal_places=2, max_digits=7)
     quantity = models.IntegerField(default=1, null=True, blank=True)
-    img_url = models.URLField()
     material = models.CharField(max_length=300)
     size = models.CharField(max_length=300)
     condition = models.ForeignKey(
