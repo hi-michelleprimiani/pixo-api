@@ -2,13 +2,13 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Collectible, Image, Category
+from pixoapi.models import Collectible, Image, Category, PixoUser
 
 
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = ['img_url']
+        fields = ['id', 'img_url']
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -71,3 +71,34 @@ class CollectibleView(ViewSet):
 
         serializer = CollectibleSerializer(collectible, many=True)
         return Response(serializer.data)
+
+    def create(self, request):
+
+        seller = PixoUser.objects.get(pk=request.data['seller'])
+        c = Collectible()
+        c.seller = seller
+        c.name = request.data.get('name')
+        c.description = request.data.get('description')
+        c.price = request.data.get('price')
+        c.material = request.data.get('material')
+        c.color = request.data.get('color')
+        c.size = request.data.get('size')
+        c.save()
+
+        image_data = request.data.get('images', [])
+        image_ids = []
+        for image in image_data:
+            i = Image()
+            i.img_url = image.get('img_url')
+            i.save()
+            image_ids.append(i.id)
+        c.images.set(image_ids)
+
+        category_data = request.data.get('categories', [])
+        c.categories.set(category_data)
+
+        try:
+            serializer = CollectibleSerializer(c, many=False)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        except Exception:
+            return Response(None, status=status.HTTP_404_NOT_FOUND)
