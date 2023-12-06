@@ -1,0 +1,18 @@
+[  
+      {
+    "model": "pixoapi.favorite",
+    "pk": 1,
+    "fields": {
+      "collectible": 1,
+      "user": 3
+    }
+  },
+      {
+    "model": "pixoapi.favorite",
+    "pk": 1,
+    "fields": {
+      "collectible": 2,
+      "user": 4
+    }
+  }
+]
