@@ -2,19 +2,9 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Collectible, Image, Category, PixoUser
-
-
-class ImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Image
-        fields = ['id', 'img_url']
-
-
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = ['id', 'label']
+from pixoapi.models import Collectible, Image, PixoUser
+from pixoapi.views.image_view import ImageSerializer
+from pixoapi.views.categories_view import CategorySerializer
 
 
 class CollectibleUserSerializer(serializers.ModelSerializer):
@@ -27,8 +17,8 @@ class CollectiblePixoUserSerializer(serializers.ModelSerializer):
     user = CollectibleUserSerializer(many=False)
 
     class Meta:
-        model = User
-        fields = ['user']
+        model = PixoUser
+        fields = ['user', 'img_url']
 
 
 class CollectibleSerializer(serializers.ModelSerializer):
