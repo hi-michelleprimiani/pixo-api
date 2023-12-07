@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Collectible, Image, PixoUser
+from pixoapi.models import Collectible, Image, PixoUser, ImageGallery
 from pixoapi.views.image_view import ImageSerializer
 from pixoapi.views.categories_view import CategorySerializer
 
@@ -64,7 +64,7 @@ class CollectibleView(ViewSet):
 
     def create(self, request):
 
-        seller = PixoUser.objects.get(pk=request.data['seller'])
+        seller = PixoUser.objects.get(user=request.auth.user)
         c = Collectible()
         c.seller = seller
         c.name = request.data.get('name')
@@ -92,3 +92,13 @@ class CollectibleView(ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         except Exception:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
+
+    def destroy(self, request, pk=None):
+        try:
+            collectible = Collectible.objects.get(pk=pk)
+            images = ImageGallery.objects.filter(image__id=collectible.id)
+            collectible.delete()
+            images.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Collectible.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
