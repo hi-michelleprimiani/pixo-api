@@ -7,7 +7,8 @@
         "pixo",
         "pixoapi",
         "pixouser",
-        "userreview"
+        "userreview",
+        "viewsets"
     ],
     "pylint.args": [
         "--load-plugins=pylint_django",

@@ -7,7 +7,6 @@ class Collectible(models.Model):
     name = models.CharField(max_length=300)
     description = models.CharField(max_length=1000)
     price = models.DecimalField(decimal_places=2, max_digits=7)
-    quantity = models.IntegerField(default=1, null=True, blank=True)
     material = models.CharField(max_length=300)
     color = models.CharField(max_length=300, null=True, blank=True)
     size = models.CharField(max_length=300)

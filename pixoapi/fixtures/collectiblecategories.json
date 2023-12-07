@@ -75,16 +75,24 @@
         "model": "pixoapi.collectiblecategory",
         "pk": 10,
         "fields": {
-          "collectible": 6,
+          "collectible": 7,
           "category": 8
         }
     },
     {
         "model": "pixoapi.collectiblecategory",
-        "pk": 10,
+        "pk": 11,
         "fields": {
           "collectible": 5,
           "category": 7
         }
-    }
+    },
+    {
+      "model": "pixoapi.collectiblecategory",
+      "pk": 12,
+      "fields": {
+        "collectible": 7,
+        "category": 1
+      }
+  }
 ]
