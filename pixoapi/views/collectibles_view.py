@@ -45,20 +45,8 @@ class CollectibleView(ViewSet):
 
     def list(self, request):
         # Get the query parameter 'user' from the request
-        user_param = request.query_params.get('user')
 
-        if user_param == 'current':
-            # If user_param is 'current', filter posts by the current user ID
-            try:
-                user_id = request.seller.id
-                collectible = Collectible.objects.filter(
-                    user__user__id=user_id)
-            except ValueError:
-                return Response(status=status.HTTP_400_BAD_REQUEST)
-        else:
-            # If no 'user' parameter or 'user' is not 'current', return all posts
-            collectible = Collectible.objects.all()
-
+        collectible = Collectible.objects.all()
         serializer = CollectibleSerializer(collectible, many=True)
         return Response(serializer.data)
 
@@ -96,7 +84,8 @@ class CollectibleView(ViewSet):
     def destroy(self, request, pk=None):
         try:
             collectible = Collectible.objects.get(pk=pk)
-            images = ImageGallery.objects.filter(image__id=collectible.id)
+            images = ImageGallery.objects.filter(
+                collectible__id=collectible.id)
             collectible.delete()
             images.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
