@@ -10,7 +10,7 @@ from pixoapi.views.categories_view import CategorySerializer
 class CollectibleUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['first_name', 'last_name']
+        fields = ['first_name', 'last_name', 'username']
 
 
 class CollectiblePixoUserSerializer(serializers.ModelSerializer):
@@ -18,7 +18,7 @@ class CollectiblePixoUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PixoUser
-        fields = ['user', 'img_url']
+        fields = ['user', 'img_url', 'bio', 'location']
 
 
 class CollectibleSerializer(serializers.ModelSerializer):

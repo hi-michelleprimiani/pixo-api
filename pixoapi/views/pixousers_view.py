@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from pixoapi.models import PixoUser
+from pixoapi.views.collectibles_view import CollectibleSerializer
 
 
 class UserPixoUserSerializer(serializers.ModelSerializer):
@@ -18,10 +19,12 @@ class UserPixoUserSerializer(serializers.ModelSerializer):
 
 class PixoUserSerializer(serializers.ModelSerializer):
     user = UserPixoUserSerializer(many=False)
+    collectible = CollectibleSerializer(
+        many=True, source="seller_collectibles")
 
     class Meta:
         model = PixoUser
-        fields = ['id', 'user', 'bio', 'location', 'img_url']
+        fields = ['id', 'user', 'bio', 'location', 'img_url', 'collectible']
 
 
 class PixoUserView(ViewSet):
