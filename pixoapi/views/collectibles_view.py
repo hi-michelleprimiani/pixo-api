@@ -2,9 +2,9 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Collectible, Image, PixoUser, ImageGallery
+from pixoapi.models import Collectible, Image, PixoUser, ImageGallery, Category
 from pixoapi.views.image_view import ImageSerializer
-from pixoapi.views.categories_view import CategorySerializer
+# from pixoapi.views.categories_view import CategorySerializer
 
 
 class CollectibleUserSerializer(serializers.ModelSerializer):
@@ -24,7 +24,10 @@ class CollectiblePixoUserSerializer(serializers.ModelSerializer):
 class CollectibleSerializer(serializers.ModelSerializer):
     seller = CollectiblePixoUserSerializer(many=False)
     images = ImageSerializer(many=True)
-    categories = CategorySerializer(many=True)
+    categories = serializers.PrimaryKeyRelatedField(
+        many=True,
+        queryset=Category.objects.all()
+    )
 
     class Meta:
         model = Collectible
@@ -80,6 +83,51 @@ class CollectibleView(ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         except Exception:
             return Response(None, status=status.HTTP_404_NOT_FOUND)
+
+    def update(self, request, pk=None):
+        try:
+            collectible = Collectible.objects.get(pk=pk)
+
+            serializer = CollectibleSerializer(
+                collectible, data=request.data, partial=True)
+            if serializer.is_valid():
+                collectible.name = serializer.validated_data.get(
+                    'name', collectible.name)
+                collectible.description = serializer.validated_data.get(
+                    'description', collectible.description)
+                collectible.price = serializer.validated_data.get(
+                    'price', collectible.price)
+                collectible.material = serializer.validated_data.get(
+                    'material', collectible.material)
+                collectible.color = serializer.validated_data.get(
+                    'color', collectible.color)
+                collectible.size = serializer.validated_data.get(
+                    'size', collectible.size)
+
+                collectible.save()
+
+                # Handling images update
+                # Delete old ImageGallery entries
+                ImageGallery.objects.filter(collectible=collectible).delete()
+
+                # Create new images and ImageGallery entries
+                images_data = request.data.get('images', [])
+                for image_data in images_data:
+                    new_image = Image.objects.create(
+                        img_url=image_data.get('img_url'))
+                    ImageGallery.objects.create(
+                        collectible=collectible, image=new_image)
+
+                # Handling categories update
+                category_data = request.data.get('categories', [])
+                collectible.categories.set(category_data)
+
+                return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
+
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Collectible.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     def destroy(self, request, pk=None):
         try:
