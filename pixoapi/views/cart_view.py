@@ -2,11 +2,8 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Cart, CartItem, PixoUser, Collectible
+from pixoapi.models import Cart, CartItem, PixoUser
 from pixoapi.views.collectibles_view import CollectibleSerializer
-from django.db.models import F
-from rest_framework.decorators import action
-from rest_framework.permissions import IsAuthenticated
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -20,7 +17,7 @@ class PixoUserCartSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PixoUser
-        fields = ['user']
+        fields = ['id', 'user']
 
 
 class CartItemSerializer(serializers.ModelSerializer):
