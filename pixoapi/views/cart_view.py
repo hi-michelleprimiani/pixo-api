@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from pixoapi.models import Cart, CartItem, PixoUser
+from pixoapi.views.collectibles_view import CollectibleSerializer
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -20,6 +21,8 @@ class PixoUserCartSerializer(serializers.ModelSerializer):
 
 
 class CartItemSerializer(serializers.ModelSerializer):
+    collectible = CollectibleSerializer(many=False)
+
     class Meta:
         model = CartItem
         fields = ['cart', 'collectible', 'quantity']
