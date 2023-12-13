@@ -2,8 +2,11 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Cart, CartItem, PixoUser
+from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.collectibles_view import CollectibleSerializer
+from django.db.models import F
+from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -51,3 +54,13 @@ class CartView(ViewSet):
         cart = Cart.objects.all()
         serializer = CartSerializer(cart, many=True)
         return Response(serializer.data)
+
+    def destroy(self, request, pk=None):
+        try:
+            cart = Cart.objects.get(pk=pk)
+            items = CartItem.objects.filter(cart__id=cart.id)
+            cart.delete()
+            items.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Cart.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
