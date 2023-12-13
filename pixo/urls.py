@@ -18,13 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from pixoapi.views import register_user, login_user, CollectibleView, PixoUserView, CategoryView
+from pixoapi.views import register_user, login_user, CollectibleView, PixoUserView, CategoryView, CartView
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'collectibles', CollectibleView, 'collectible')
 router.register(r'pixouser', PixoUserView, 'pixouser')
 router.register(r'categories', CategoryView, 'categories')
+router.register(r'cart', CartView, 'cart')
 
 
 urlpatterns = [

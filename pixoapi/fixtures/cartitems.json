@@ -1,0 +1,11 @@
+[
+    {
+      "model": "pixoapi.cartitem",
+      "pk": 1,
+      "fields": {
+        "cart": 1,
+        "collectible": 1,
+        "quantity": 1 
+      }
+    }
+]
