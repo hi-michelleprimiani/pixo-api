@@ -1,8 +1,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import Cart, CartItem, Collectible
-from .cart_view import CartSerializer
+from pixoapi.models import Cart, CartItem, Collectible, PixoUser
 from .collectibles_view import CollectibleSerializer
 
 
@@ -36,7 +35,9 @@ class CartItemView(ViewSet):
         # user = PixoUser.objects.get(user=request.user)
         cart = Cart.objects.get(pk=request.data['cart'])
         collectible = Collectible.objects.get(pk=request.data['collectible'])
+        user = PixoUser.objects.get(user=request.auth.user)
         cartitem = CartItem()
+        cartitem.user = user
         cartitem.cart = cart
         cartitem.collectible = collectible
         cartitem.quantity = request.data.get('quantity')
