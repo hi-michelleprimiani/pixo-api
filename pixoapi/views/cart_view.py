@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.image_view import ImageSerializer
+from django.http import HttpResponseServerError
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -57,9 +58,15 @@ class CartView(ViewSet):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
-        cart = Cart.objects.all()
-        serializer = CartSerializer(cart, many=True)
-        return Response(serializer.data)
+
+        try:
+            # user = PixoUser.objects.get(user=request.auth.user)
+            carts = Cart.objects.get(user__user=request.auth.user, paid=False)
+            serializer = CartSerializer(
+                carts, many=False, context={"request": request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
 
     def destroy(self, request, pk=None):
         try:

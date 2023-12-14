@@ -32,8 +32,14 @@ class CartItemView(ViewSet):
 
     def create(self, request):
 
-        # user = PixoUser.objects.get(user=request.user)
-        cart = Cart.objects.get(pk=request.data['cart'])
+        user = PixoUser.objects.get(user=request.auth.user)
+        try:
+            cart = Cart.objects.get(user=user, paid=False)
+        except Cart.DoesNotExist:
+            cart = Cart()
+            cart.user = user
+            cart.save()
+
         collectible = Collectible.objects.get(pk=request.data['collectible'])
         user = PixoUser.objects.get(user=request.auth.user)
         cartitem = CartItem()
