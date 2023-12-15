@@ -2,8 +2,10 @@ from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from pixoapi.models import PixoUser
-from pixoapi.views.collectibles_view import CollectibleSerializer
+from pixoapi.models import PixoUser, Collectible, Category
+from pixoapi.views.collectibles_view import CollectibleSerializer, CollectiblePixoUserSerializer
+from pixoapi.views.cart_view import CartSerializer
+from pixoapi.views.image_view import ImageSerializer
 
 
 class UserPixoUserSerializer(serializers.ModelSerializer):
@@ -17,14 +19,29 @@ class UserPixoUserSerializer(serializers.ModelSerializer):
         fields = ['full_name', 'username']
 
 
+class PixoCollectibleSerializer(serializers.ModelSerializer):
+    images = ImageSerializer(many=True)
+    categories = serializers.PrimaryKeyRelatedField(
+        many=True,
+        queryset=Category.objects.all()
+    )
+
+    class Meta:
+        model = Collectible
+        fields = ['id', 'name', 'description',
+                  'price', 'material', 'color', 'size', 'created_date', 'images', 'categories']
+
+
 class PixoUserSerializer(serializers.ModelSerializer):
     user = UserPixoUserSerializer(many=False)
-    collectible = CollectibleSerializer(
+    collectible = PixoCollectibleSerializer(
         many=True, source="seller_collectibles")
+    carts = CartSerializer(many=True, read_only=True)
 
     class Meta:
         model = PixoUser
-        fields = ['id', 'user', 'bio', 'location', 'img_url', 'collectible']
+        fields = ['id', 'user', 'bio', 'location',
+                  'img_url', 'collectible', 'carts']
 
 
 class PixoUserView(ViewSet):
