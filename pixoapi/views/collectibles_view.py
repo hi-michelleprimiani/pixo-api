@@ -18,7 +18,7 @@ class CollectiblePixoUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PixoUser
-        fields = ['user', 'img_url', 'bio', 'location']
+        fields = ['id', 'user', 'img_url', 'bio', 'location']
 
 
 class CollectibleSerializer(serializers.ModelSerializer):
