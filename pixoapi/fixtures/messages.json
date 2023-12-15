@@ -1,0 +1,22 @@
+[
+    {
+        "model": "pixoapi.message",
+        "pk": 1,
+        "fields": {
+            "sender": 5,
+            "receiver": 1,
+            "text": "Hello, this is a test message!",
+            "date_time": "2023-12-15T12:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 2,
+        "fields": {
+            "sender": 1,
+            "receiver": 5,
+            "text": "Hi there, received your message!",
+            "date_time": "2023-12-15T12:05:00Z"
+        }
+    }
+]

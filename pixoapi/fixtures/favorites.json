@@ -9,7 +9,7 @@
   },
       {
     "model": "pixoapi.favorite",
-    "pk": 1,
+    "pk": 2,
     "fields": {
       "collectible": 2,
       "user": 4
