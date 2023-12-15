@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from rest_framework import serializers
+from rest_framework import serializers, status
 from pixoapi.models import Message, PixoUser
 
 
@@ -40,6 +40,31 @@ class MessagesView(ViewSet):
         received_messages = Message.objects.filter(receiver__user=request.user)
         messages = sent_messages | received_messages
         # Sort the messages if needed (e.g., by date)
-        messages = messages.order_by('-date_time')
+        messages = messages.order_by('date_time')
         serializer = MessageSerializer(messages, many=True)
         return Response(serializer.data)
+
+    def create(self, request):
+
+        sender = PixoUser.objects.get(user=request.auth.user)
+        receiver = PixoUser.objects.get(pk=request.data["receiver"])
+        m = Message()
+        m.sender = sender
+        m.receiver = receiver
+        m.text = request.data.get('text')
+        m.date_time = request.data.get('date_time')
+        m.save()
+
+        try:
+            serializer = MessageSerializer(m, many=False)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        except Exception:
+            return Response(None, status=status.HTTP_404_NOT_FOUND)
+
+    def destroy(self, request, pk=None):
+        try:
+            message = Message.objects.get(pk=pk)
+            message.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Message.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
