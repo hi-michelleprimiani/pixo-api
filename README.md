@@ -26,7 +26,7 @@ The Pixo App Server is built to support the Pixo web and mobile applications. It
 
 ## API Reference
 
-- Details about the API endpoints, request/response formats, and example requests if possible.
+- Details about the API endpoints and request/response formats
 
 ### Example EndPoint
 - **Get Collectible Item** - GET ```http://localhost:8000/collectibles/:itemId```
