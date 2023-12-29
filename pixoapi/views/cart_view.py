@@ -6,6 +6,7 @@ from django.http import HttpResponseServerError
 from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.image_view import ImageSerializer
 from datetime import datetime
+from django.utils.timezone import localtime
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -92,26 +93,24 @@ class CartView(ViewSet):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
-        """
-        Retrieve the current unpaid cart for the authenticated user.
-
-        This method fetches the cart associated with the authenticated user that has not yet been paid for.
-        It serializes the cart data and returns it. In case of any exception, an HTTP server error is returned.
-
-        Parameters:
-        request (HttpRequest): The HTTP request object with user authentication details.
-
-        Returns:
-        Response: Serialized cart data with HTTP 200 OK, or HTTP server error in case of exceptions.
-        """
+        is_paid = request.query_params.get('paid', 'False').lower() in [
+            'true', '1', 'yes']
 
         try:
-            # Fetches the Cart object associated with the authenticated user that has not been paid for yet.
-            # 'user__user' is used to navigate through the related user model to the actual User model.
-            carts = Cart.objects.get(user__user=request.auth.user, paid=False)
-            serializer = CartSerializer(
-                carts, many=False, context={"request": request})
+            if is_paid:
+                carts = Cart.objects.filter(
+                    user__user=request.auth.user, paid=True)
+                serializer = CartSerializer(
+                    carts, many=True, context={"request": request})
+            else:
+                cart = Cart.objects.get(
+                    user__user=request.auth.user, paid=False)
+                serializer = CartSerializer(
+                    cart, many=False, context={"request": request})
+
             return Response(serializer.data, status=status.HTTP_200_OK)
+        except Cart.DoesNotExist:
+            return Response({"message": "Cart not found"}, status=status.HTTP_404_NOT_FOUND)
         except Exception as ex:
             return HttpResponseServerError(ex)
 
@@ -125,7 +124,8 @@ class CartView(ViewSet):
 
             # Validate the data
             if serializer.is_valid():
-                # Save the updated cart if valid
+                if serializer.validated_data.get('paid', False):
+                    cart.purchase_date = datetime.now()  # Set the purchase date
                 serializer.save()
 
                 # Return a successful response with the updated data
