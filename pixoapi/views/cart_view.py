@@ -5,6 +5,7 @@ from rest_framework import serializers, status
 from django.http import HttpResponseServerError
 from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.image_view import ImageSerializer
+from datetime import datetime
 
 
 class UserCartSerializer(serializers.ModelSerializer):
@@ -45,6 +46,23 @@ class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cart
         fields = ['id', 'user', 'purchase_date', 'paid', 'items']
+
+    def validate_paid(self, value):
+        """
+        Check that the paid field is not being set to False if it's already True.
+        """
+        if self.instance and self.instance.paid and not value:
+            raise serializers.ValidationError("Cannot unset a cart as unpaid.")
+        return value
+
+    def validate_purchase_date(self, value):
+        """
+        Ensure the purchase date is not set in the future.
+        """
+        if value > datetime.datetime.now():
+            raise serializers.ValidationError(
+                "Purchase date cannot be in the future.")
+        return value
 
 
 class CartView(ViewSet):
@@ -96,6 +114,29 @@ class CartView(ViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    def update(self, request, pk=None):
+        try:
+            # Retrieve the cart object
+            cart = Cart.objects.get(pk=pk)
+
+            # Create a serializer instance with the retrieved cart and new data
+            serializer = CartSerializer(cart, data=request.data, partial=True)
+
+            # Validate the data
+            if serializer.is_valid():
+                # Save the updated cart if valid
+                serializer.save()
+
+                # Return a successful response with the updated data
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            else:
+                # If the data is not valid, return an error response
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        except Cart.DoesNotExist:
+            # If the cart does not exist, return a not found response
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     def destroy(self, request, pk=None):
         """
