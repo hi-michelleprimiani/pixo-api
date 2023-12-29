@@ -36,8 +36,11 @@ class MessageSerializer(serializers.ModelSerializer):
 class MessagesView(ViewSet):
 
     def list(self, request):
+
         sent_messages = Message.objects.filter(sender__user=request.user)
         received_messages = Message.objects.filter(receiver__user=request.user)
+        # Combine the querysets of sent and received messages.
+        # This will include all messages where the user is either the sender or the receiver.
         messages = sent_messages | received_messages
         # Sort the messages if needed (e.g., by date)
         messages = messages.order_by('date_time')

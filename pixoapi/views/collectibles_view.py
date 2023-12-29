@@ -38,6 +38,16 @@ class CollectibleSerializer(serializers.ModelSerializer):
 class CollectibleView(ViewSet):
 
     def retrieve(self, request, pk):
+        """
+        Retrieve a specific Collectible by its primary key.
+
+        Parameters:
+        request (HttpRequest): The HTTP request object.
+        pk (int): Primary key of the Collectible to retrieve.
+
+        Returns:
+        Response: Serialized Collectible data or 404 Not Found if it doesn't exist.
+        """
         try:
             collectible = Collectible.objects.get(pk=pk)
             serializer = CollectibleSerializer(
@@ -47,13 +57,36 @@ class CollectibleView(ViewSet):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
-        # Get the query parameter 'user' from the request
+        """
+        List all Collectibles.
+
+        Parameters:
+        request (HttpRequest): The HTTP request object.
+
+        Returns:
+        Response: List of serialized Collectible data.
+        """
 
         collectible = Collectible.objects.all()
         serializer = CollectibleSerializer(collectible, many=True)
         return Response(serializer.data)
 
     def create(self, request):
+        """
+        Create a new Collectible using the request data, including its associated images and categories.
+
+        This method extracts data from the request, including the authenticated user's details, and uses 
+        it to create a new Collectible object. It handles the setting of various attributes like name, 
+        description, price, material, color, and size. It also processes and associates images and categories 
+        with the newly created Collectible. If any exception occurs during creation, a detailed error 
+        response is returned.
+
+        Parameters:
+        request (HttpRequest): The HTTP request object containing Collectible data.
+
+        Returns:
+        Response: Serialized data of the created Collectible or 404 Not Found on error.
+        """
 
         # Retrieve the seller's information based on the authenticated user.
         seller = PixoUser.objects.get(user=request.auth.user)
@@ -92,6 +125,24 @@ class CollectibleView(ViewSet):
             return Response(error_message, status=status.HTTP_404_NOT_FOUND)
 
     def update(self, request, pk=None):
+        """
+        Update an existing Collectible identified by the primary key based on the provided request data.
+
+        This method retrieves a Collectible based on the provided primary key and updates its attributes 
+        with the data sent in the request. It allows partial updates to fields like name, description, price, 
+        material, color, and size. The method also handles the updating of associated images and categories, 
+        including the deletion of old images and addition of new ones. It checks for data validity before 
+        saving changes. If the specified Collectible is not found or if the data is invalid, appropriate 
+        error responses are returned.
+
+        Parameters:
+        request (HttpRequest): The HTTP request object with updated data for the Collectible.
+        pk (int, optional): Primary key of the Collectible to update.
+
+        Returns:
+        Response: Serialized updated Collectible data with HTTP 204 status on successful update, 
+                HTTP 400 Bad Request if data is invalid, or HTTP 404 Not Found if the Collectible doesn't exist.
+        """
         try:
             collectible = Collectible.objects.get(pk=pk)
 
@@ -141,6 +192,16 @@ class CollectibleView(ViewSet):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
     def destroy(self, request, pk=None):
+        """
+        Delete a Collectible and its related images identified by the primary key.
+
+        Parameters:
+        request (HttpRequest): The HTTP request object.
+        pk (int, optional): Primary key of the Collectible to delete.
+
+        Returns:
+        Response: 204 No Content on successful deletion or 404 Not Found if not found.
+        """
         try:
             collectible = Collectible.objects.get(pk=pk)
             images = ImageGallery.objects.filter(
