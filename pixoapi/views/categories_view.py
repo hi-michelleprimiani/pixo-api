@@ -26,3 +26,12 @@ class CategoryView(ViewSet):
         serializer = CategorySerializer(
             cat, many=True, context={'request': request})
         return Response(serializer.data)
+
+    def destroy(self, request, pk=None):
+        try:
+            category = Category.objects.get(pk=pk)
+            category.delete()
+
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Category.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)

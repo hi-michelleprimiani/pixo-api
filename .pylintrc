@@ -1,5 +1,6 @@
 [FORMAT] 
   good-names=i,j,ex,pk
+  max-line-length = 150
 
 [MESSAGES CONTROL]
   disable=broad-except,imported-auth-user,missing-class-docstring,no-self-use,abstract-method

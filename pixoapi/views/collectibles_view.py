@@ -55,7 +55,9 @@ class CollectibleView(ViewSet):
 
     def create(self, request):
 
+        # Retrieve the seller's information based on the authenticated user.
         seller = PixoUser.objects.get(user=request.auth.user)
+
         c = Collectible()
         c.seller = seller
         c.name = request.data.get('name')
@@ -67,12 +69,14 @@ class CollectibleView(ViewSet):
         c.save()
 
         image_data = request.data.get('images', [])
+        # initialize a list to store image Id's
         image_ids = []
         for image in image_data:
             i = Image()
             i.img_url = image.get('img_url')
             i.save()
             image_ids.append(i.id)
+        # Associate the images with the Collectible.
         c.images.set(image_ids)
 
         category_data = request.data.get('categories', [])
@@ -81,13 +85,18 @@ class CollectibleView(ViewSet):
         try:
             serializer = CollectibleSerializer(c, many=False)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        except Exception:
-            return Response(None, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            # Handle exceptions and return a 404 response with error details.
+            # Convert the exception to a string and put it in a dictionary.
+            error_message = {'error': str(e)}
+            return Response(error_message, status=status.HTTP_404_NOT_FOUND)
 
     def update(self, request, pk=None):
         try:
             collectible = Collectible.objects.get(pk=pk)
 
+            # Initialize the serializer with the retrieved object and incoming data.
+            # 'partial=True' allows partial update of the object fields.
             serializer = CollectibleSerializer(
                 collectible, data=request.data, partial=True)
             if serializer.is_valid():
@@ -106,8 +115,7 @@ class CollectibleView(ViewSet):
 
                 collectible.save()
 
-                # Handling images update
-                # Delete old ImageGallery entries
+                # Delete existing ImageGallery entries related to this collectible.
                 ImageGallery.objects.filter(collectible=collectible).delete()
 
                 # Create new images and ImageGallery entries
@@ -118,14 +126,17 @@ class CollectibleView(ViewSet):
                     ImageGallery.objects.create(
                         collectible=collectible, image=new_image)
 
-                # Handling categories update
+                # Handling categories update associated with collectible
                 category_data = request.data.get('categories', [])
                 collectible.categories.set(category_data)
 
+                # Return the updated collectible
                 return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
 
+            # If the data is not valid, return 404
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+        # If the collectible does not exist, return 404
         except Collectible.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
