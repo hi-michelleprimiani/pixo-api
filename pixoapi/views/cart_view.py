@@ -6,7 +6,6 @@ from rest_framework import serializers, status
 from django.http import HttpResponseServerError
 from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.image_view import ImageSerializer
-from django.utils.timezone import localtime
 
 
 class UserCartSerializer(serializers.ModelSerializer):
