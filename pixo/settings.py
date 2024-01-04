@@ -75,6 +75,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://king-prawn-app-kn67q.ondigitalocean.app",
+    # Add other allowed origins here
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
 ROOT_URLCONF = 'pixo.urls'
 
 TEMPLATES = [
