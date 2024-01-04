@@ -1,1 +1,222 @@
-[{"model": "pixoapi.pixouser", "pk": 1, "fields": {"user": 1, "bio": "Hello, I'm Alice, your go-to source for unique handcrafted pottery. As a passionate pottery artisan, I transform clay into one-of-a-kind pieces inspired by the beauty of nature. My pottery reflects the serene landscapes I encounter during my hikes. Explore my Pixo shop and bring a touch of nature's elegance into your home. Each piece tells a story of craftsmanship and love for the art. Welcome to my world of pottery artistry! 🏺🌿🛒", "location": "Tampa", "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/10321222/original_0a9cdbfb5252de1b09eefa6a5fc70008.jpg?1611123345?bc=0", "created_on": "2023-12-05"}}, {"model": "pixoapi.pixouser", "pk": 2, "fields": {"user": 2, "bio": "Hello there, I'm Mia, your mosaic tile expert and creator. With a deep passion for crafting intricate mosaic designs, I'm dedicated to bringing you the finest mosaic tiles for your creative projects. My shop is your gateway to a world of stunning mosaic artistry, where every tile is a testament to craftsmanship and creativity. Explore my collection and let's make your mosaic dreams a reality, one tile at a time. Welcome to Mosaic Magic! 🧩🎨", "location": "Nashville", "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/10159561/original_f19655ae2aa694eb8e4949764ca14521.jpg?1610135254?bc=0", "created_on": "2023-12-05"}}, {"model": "pixoapi.pixouser", "pk": 3, "fields": {"user": 3, "bio": "Hey there, I'm Grace, your vintage fashion curator extraordinaire. I'm on a mission to bring back the timeless elegance of yesteryears with a collection of vintage clothing that tells stories of decades past. Dive into my virtual vintage boutique, where every piece is a treasure waiting to be rediscovered. From classic silhouettes to iconic styles, we're on a journey through fashion history. Join me in celebrating the charm of vintage fashion – where style knows no expiration date. ", "location": "New York", "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/20763918/original_4618ebd96cb9d34228f410aad4fa9c8b.jpg?1678277534?bc=0", "created_on": "2023-12-05"}}, {"model": "pixoapi.pixouser", "pk": 4, "fields": {"user": 4, "bio": "With a passion for woodworking and a love for the game of kings, I craft exquisite chess boards that marry art and strategy. Explore my collection and discover the beauty of precision in each piece. From classic designs to modern interpretations, these boards are more than a playing surface; they're a testament to the art of chess. Join me on this chessboard journey, where every move is a masterpiece waiting to be made.", "location": "San Francisco, CA", "img_url": "https://teamjapanese.com/wp-content/uploads/2022/03/man-in-japanese.jpg", "created_on": "2023-12-05"}}, {"model": "pixoapi.pixouser", "pk": 5, "fields": {"user": 5, "bio": "With the gentle stroke of a blade, I carve life into pieces of wood, transforming them into delightful companions for your soul. My craft is inspired by nature's beauty, and each comfort bird carries the serenity of the woods within. Join me in the art of whittling and discover the therapeutic magic of these handcrafted treasures. Let's bring a touch of nature's comfort to your world, one bird at a time.", "location": "Los Angeles, CA", "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/18616992/original_9f45e0b9c3d725e02ae770f378eece1c.jpg?1666348045?bc=0", "created_on": "2023-12-05"}}, {"model": "pixoapi.pixouser", "pk": 6, "fields": {"user": 6, "bio": "Hello, I'm Kate, and I'm passionate about crafting handmade soap that's as beautiful as it is beneficial. 🛁 \n 🌟 What I Do: \n I meticulously handcraft each bar of soap with love and care using natural and nourishing ingredients. Every batch is a work of art, infused with the goodness of nature. \n 🌱 My Inspiration: \n My love for nature, hiking, and all things natural led me to create these exquisite soaps. I draw inspiration from the serene beauty of the outdoors, infusing my creations with the essence of the wild. \n 🌸 Crafted with Purpose: \n I believe in the power of self-care and the importance of choosing products that are kind to your skin and the environment. That's why my soaps are free from harsh chemicals and cruelty-free. \n 🛒 Shop Now: \nExplore my collection and experience the joy of handmade soap. Your skin will thank you, and you'll fall in love with the art of bathing all over again.", "location": "Seattle, WA", "img_url": "https://media.istockphoto.com/id/1475569433/photo/natural-beauty.webp?b=1&s=170667a&w=0&k=20&c=S5vXPbdLMTQZWYOQnRDNu1dZkBl5CF5GzHjU6ISdQvA=", "created_on": "2023-12-08"}}, {"model": "pixoapi.pixouser", "pk": 7, "fields": {"user": 7, "bio": "🜃 Thank you for stopping by Earth Folk! | Processing Time: 1 Business Day | We specialize in small batch, natural body care and holistic remedies to enhance your self care rituals. Effective self care rituals do not have to include toxic formations. Therefore, we stay away from hard-to-pronounce synthetic ingredients and fragrances. We sustainably source high quality wildcrafted and organic raw materials whenever possible.", "location": "Los Angeles, CA", "img_url": "https://i.etsystatic.com/isla/424981/63853449/isla_280x280.63853449_qb76vdl6.jpg?version=0", "created_on": "2023-12-08"}}, {"model": "pixoapi.pixouser", "pk": 8, "fields": {"user": 8, "bio": "I grew up traipsing around creeks with my pockets full of newts and beetles. My grandparents raised birds and my sister sold hamsters to the local pet store. I think the core of my personality was formed in gardens, tidepools, meadows, and mud puddles. As an adult, I wanted to share my love of the natural world and inspire the next generation to investigate all the life that surrounds us. I became a biology teacher and moved to the Pacific Northwest, where I engage my students in the classroom with homemade games based on the science we are learning. While my games are designed with students in mind, they are also heavily influenced by the variety of strategy board games I grew up playing. They are rooted in real science, but strategic enough to find a home in any game night rotation. My design process includes sourcing, colorizing, manipulating, and altering vintage art in the public domain until I've created a sort of digital collage that is printed on cards. Text and borders may come from a 1700s map, while organism art might be a combination of two lithograph prints from the 1800s. The result is a beautiful game that is equal parts strategic and instructive. I have been humbled by the community's generous reception of my games and look forward to designing expansions and sequels, as well as all new games, in the future. My instagram account provides updates on my progress and also shares my personal nature photography, along with interesting biology and ecology facts related to the photos. Thank you so much for your support and encouragement!", "location": "Portland, OR", "img_url": "https://i.etsystatic.com/isla/9991a0/39812774/isla_280x280.39812774_f3qa42di.jpg?version=0", "created_on": "2023-12-08"}}]
+[
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "bio": "Hello, I'm Alice, your go-to source for unique handcrafted pottery. As a passionate pottery artisan, I transform clay into one-of-a-kind pieces inspired by the beauty of nature. My pottery reflects the serene landscapes I encounter during my hikes. Explore my Pixo shop and bring a touch of nature's elegance into your home. Each piece tells a story of craftsmanship and love for the art. Welcome to my world of pottery artistry! 🏺🌿🛒",
+      "location": "Tampa",
+      "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/10321222/original_0a9cdbfb5252de1b09eefa6a5fc70008.jpg?1611123345?bc=0",
+      "created_on": "2023-12-05"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bio": "Hello there, I'm Mia, your mosaic tile expert and creator. With a deep passion for crafting intricate mosaic designs, I'm dedicated to bringing you the finest mosaic tiles for your creative projects. My shop is your gateway to a world of stunning mosaic artistry, where every tile is a testament to craftsmanship and creativity. Explore my collection and let's make your mosaic dreams a reality, one tile at a time. Welcome to Mosaic Magic! 🧩🎨",
+      "location": "Nashville",
+      "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/10159561/original_f19655ae2aa694eb8e4949764ca14521.jpg?1610135254?bc=0",
+      "created_on": "2023-12-05"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "bio": "Hey there, I'm Grace, your vintage fashion curator extraordinaire. I'm on a mission to bring back the timeless elegance of yesteryears with a collection of vintage clothing that tells stories of decades past. Dive into my virtual vintage boutique, where every piece is a treasure waiting to be rediscovered. From classic silhouettes to iconic styles, we're on a journey through fashion history. Join me in celebrating the charm of vintage fashion – where style knows no expiration date. ",
+      "location": "New York",
+      "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/20763918/original_4618ebd96cb9d34228f410aad4fa9c8b.jpg?1678277534?bc=0",
+      "created_on": "2023-12-05"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "bio": "With a passion for woodworking and a love for the game of kings, I craft exquisite chess boards that marry art and strategy. Explore my collection and discover the beauty of precision in each piece. From classic designs to modern interpretations, these boards are more than a playing surface; they're a testament to the art of chess. Join me on this chessboard journey, where every move is a masterpiece waiting to be made.",
+      "location": "San Francisco, CA",
+      "img_url": "https://teamjapanese.com/wp-content/uploads/2022/03/man-in-japanese.jpg",
+      "created_on": "2023-12-05"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "bio": "With the gentle stroke of a blade, I carve life into pieces of wood, transforming them into delightful companions for your soul. My craft is inspired by nature's beauty, and each comfort bird carries the serenity of the woods within. Join me in the art of whittling and discover the therapeutic magic of these handcrafted treasures. Let's bring a touch of nature's comfort to your world, one bird at a time.",
+      "location": "Los Angeles, CA",
+      "img_url": "https://d2w9rnfcy7mm78.cloudfront.net/18616992/original_9f45e0b9c3d725e02ae770f378eece1c.jpg?1666348045?bc=0",
+      "created_on": "2023-12-05"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "bio": "Hello, I'm Kate.",
+      "location": "Seattle, WA",
+      "img_url": "https://media.istockphoto.com/id/1475569433/photo/natural-beauty.webp?b=1&s=170667a&w=0&k=20&c=S5vXPbdLMTQZWYOQnRDNu1dZkBl5CF5GzHjU6ISdQvA=",
+      "created_on": "2023-12-08"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "bio": "🜃 Thank you for stopping by Earth Folk! | Processing Time: 1 Business Day | We specialize in small batch, natural body care and holistic remedies to enhance your self care rituals. Effective self care rituals do not have to include toxic formations. Therefore, we stay away from hard-to-pronounce synthetic ingredients and fragrances. We sustainably source high quality wildcrafted and organic raw materials whenever possible.",
+      "location": "Los Angeles, CA",
+      "img_url": "https://i.etsystatic.com/isla/424981/63853449/isla_280x280.63853449_qb76vdl6.jpg?version=0",
+      "created_on": "2023-12-08"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "bio": "I grew up traipsing around creeks with my pockets full of newts and beetles. My grandparents raised birds and my sister sold hamsters to the local pet store. I think the core of my personality was formed in gardens, tidepools, meadows, and mud puddles. As an adult, I wanted to share my love of the natural world and inspire the next generation to investigate all the life that surrounds us. I became a biology teacher and moved to the Pacific Northwest, where I engage my students in the classroom with homemade games based on the science we are learning. While my games are designed with students in mind, they are also heavily influenced by the variety of strategy board games I grew up playing. They are rooted in real science, but strategic enough to find a home in any game night rotation. My design process includes sourcing, colorizing, manipulating, and altering vintage art in the public domain until I've created a sort of digital collage that is printed on cards. Text and borders may come from a 1700s map, while organism art might be a combination of two lithograph prints from the 1800s. The result is a beautiful game that is equal parts strategic and instructive. I have been humbled by the community's generous reception of my games and look forward to designing expansions and sequels, as well as all new games, in the future. My instagram account provides updates on my progress and also shares my personal nature photography, along with interesting biology and ecology facts related to the photos. Thank you so much for your support and encouragement!",
+      "location": "Portland, OR",
+      "img_url": "https://i.etsystatic.com/isla/9991a0/39812774/isla_280x280.39812774_f3qa42di.jpg?version=0",
+      "created_on": "2023-12-08"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "bio": "Hi! I like creating stuff ",
+      "location": "Tampa, Florida ",
+      "img_url": "https://i.etsystatic.com/38034251/r/il/0aee33/5426331550/il_794xN.5426331550_syug.jpg",
+      "created_on": "2023-12-13"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "bio": "Hi! I like creating thingds",
+      "location": "Atlanta, GA",
+      "img_url": "https://i.etsystatic.com/38034251/r/il/0aee33/5426331550/il_794xN.5426331550_syug.jpg",
+      "created_on": "2023-12-13"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "bio": "Hi! I'm kevin",
+      "location": "Nashville, TN",
+      "img_url": "https://i.etsystatic.com/38034251/r/il/0aee33/5426331550/il_794xN.5426331550_syug.jpg",
+      "created_on": "2023-12-13"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "bio": "Hi! I'm coach Steve",
+      "location": "Internet",
+      "img_url": "https://i.etsystatic.com/38034251/r/il/0aee33/5426331550/il_794xN.5426331550_syug.jpg",
+      "created_on": "2023-12-13"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "bio": "Hi! I like creating things",
+      "location": "Tampa, Florida",
+      "img_url": "https://i.etsystatic.com/20441004/r/il/f1afd8/2160953632/il_794xN.2160953632_39tr.jpg",
+      "created_on": "2023-12-18"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "bio": "Thank you for visiting my online store. I am glad to inform you that I am working on new felt baby mobiles such as a space mobile, tropical mobile, safari mobile, jungle mobile and other nursery decor as well as needle felted fairy dolls and animals. Since many of us love to make handmade decor, I will soon provide the opportunity to buy wool in my store, so that everyone can try to make something unique from this wonderful material.\nI wish you all a good mood and take care!",
+      "location": "Austin, Texas",
+      "img_url": "https://i.etsystatic.com/isbl/3eeb89/55964281/isbl_1680x420.55964281_fg598i8y.jpg?version=0",
+      "created_on": "2023-12-20"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "bio": "At Enviro Gardening, we believe in environmentally friendly gardening. Therefore we advocate reusable or biodegradable gardening materials with organic non-GMO seeds.\n\nWith deep mindset of environmental health, our research team strives to experiment new gardening methods that are clean, healthy, easy to grow, and high yield.\n\nYour feedback is important for us to develop better products. Please try our products, and share your experience with us.\n\nHave fun with gardening!",
+      "location": "Sacremento, California",
+      "img_url": "https://i.etsystatic.com/isla/caa3cd/63534953/isla_280x280.63534953_ihwmeegy.jpg?version=0",
+      "created_on": "2023-12-20"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 16,
+    "fields": {
+      "user": 16,
+      "bio": "I'm Ash - but my friends call me Lemon! We're glad you're here to view our assortment of vintage and antique Loot! We're located in the heart of Kingston, Ontario, Canada - a city known for it's historic past. We source weekly for interesting homeware, oddities, attire and more. We visit charity shops, estates, antique stores, yard sales and vintage markets. We often travel to find our unique selection! You never know what will strike our interest and be available in our shop! Make sure to favourite Lemon's Loot to be updated on future promotions, sales and the ever expanding items available to add to your cart. We appreciate you stopping by and viewing our collection.",
+      "location": "Seattle, WA",
+      "img_url": "https://i.etsystatic.com/isbl/571e2d/67076373/isbl_1680x420.67076373_k094yn4t.jpg?version=1",
+      "created_on": "2023-12-22"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 17,
+    "fields": {
+      "user": 17,
+      "bio": "The Etsy shop \"ThePurityTree\" specializes in 100% natural products, focusing on items such as magnesium oil, butter, Himalayan salt scrub, and calendula oil. These products are made using ingredients from the Zechstein seabed and are popular for their soothing and therapeutic properties. The shop has gained a reputation for quality, receiving 5-star reviews for its effective and beautifully packaged products. It's recognized as a top shop for gifts, indicating a strong customer satisfaction and loyalty.",
+      "location": "Boise, Idaho",
+      "img_url": "https://i.etsystatic.com/isla/3403d1/66736619/isla_280x280.66736619_nr0l70pt.jpg?version=0",
+      "created_on": "2023-12-22"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 18,
+    "fields": {
+      "user": 18,
+      "bio": "About Be Well Group\n\nAt Be Well Group, we celebrate the joy of parenthood by offering a wide range of personalized baby items that bring smiles and warmth to your family's life. We understand that every baby is unique, and that's why we're dedicated to creating one-of-a-kind products that reflect the individuality of your little one.\n\nOur Mission\n\nOur mission is simple but meaningful: to provide families with high-quality, personalized baby items that capture the essence of those precious early moments. We believe in cherishing the journey of parenthood and making it even more special with our thoughtfully crafted products.\n\nWhy Choose Be Well Group?\n\nPersonalization at Its Best: We believe in the power of personalization. From custom baby blankets to adorable onesies, we offer a wide range of options to make every item uniquely yours.\n\nQuality You Can Trust: Your baby deserves the best, and so do you. We source only the finest materials to ensure your baby's comfort and safety while maintaining our commitment to quality craftsmanship.\n\nMemories That Last: Our personalized baby items aren't just products; they're keepsakes that hold the memories of your child's early days. We're here to help you create lasting memories.\n\nEco-Friendly Practices: We care about the environment and the world our children will inherit. That's why we're dedicated to eco-friendly production methods and sustainable materials whenever possible.\n\nJoin Us on This Beautiful Journey\n\nParenthood is a remarkable adventure filled with love, laughter, and cherished moments. Be Well Group is honored to be a part of your family's journey, offering handcrafted, personalized baby items that enhance these beautiful moments. We invite you to explore our collections and join us in celebrating the magic of new beginnings.\n\nThank you for choosing Be Well Group as your partner in creating unforgettable memories with your little one.",
+      "location": "Santa Clarita, California",
+      "img_url": "https://i.etsystatic.com/isla/bcc0cc/40613859/isla_280x280.40613859_jgx5ufzr.jpg?version=0",
+      "created_on": "2023-12-22"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 19,
+    "fields": {
+      "user": 19,
+      "bio": "Hello !\nWelcome to my online shop !!!Créativi'Théo is colour and mouvement!!!\nWhen I was a little girl, I wanted to fly...I tried with an umbrella but it didn't work.I Made myself a kite, and a delta plane, but it didn't work either...And one day I found dance and understood that you could fly without wings !!!!\nHere you will find dancers'earrings that will cheer up your face...and Decotative Mobiles made of silk paper, light and which strat to move with just a little bit of air...\nCome and start dancing!!!",
+      "location": "New York City, New York",
+      "img_url": "https://i.etsystatic.com/15058813/r/il/75098e/1235751201/il_794xN.1235751201_c4x9.jpg",
+      "created_on": "2023-12-22"
+    }
+  },
+  {
+    "model": "pixoapi.pixouser",
+    "pk": 20,
+    "fields": {
+      "user": 20,
+      "bio": "The 'Charm' birdfeeder was featured in the April '11 issue of Martha Stewart Living... as well as in the May 6th issue of \"The Week\" magazine.\nhttp://www.joepapendick.wordpress.com/2011/07/25/martha-stewart-living-april-2011/\nhttp://www.joepapendick.wordpress.com/2011/07/25/the-week-magazine-may-2011/\n\nAll 'work in progress' can be now be found on my Wordpress blog... along with various other efforts not necessarily listed here on Etsy.\nhttp://www.joepapendick.wordpress.com/\n\nEtsy Featured Seller interview:\nhttps://web.archive.org/web/20130522153738/http://www.etsy.com/blog/en/2011/featured-seller-joe-papendick/\n\nThat's actually one of my \"Charm\" Bird Feeders holding up some jewelry in the latest J. Crew Winter Gift Guide...\nhttp://www.jcrew.com/AST/DynamicAsst/GiftGuide2010.jsp",
+      "location": "St. Louis, Missouri",
+      "img_url": "https://i.etsystatic.com/isla/9e2a36/15917805/isla_280x280.15917805_5has1vcx.jpg?version=0",
+      "created_on": "2024-01-01"
+    }
+  }
+]

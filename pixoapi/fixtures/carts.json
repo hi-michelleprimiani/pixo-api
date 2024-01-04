@@ -1,10 +1,10 @@
 [
-    {
-      "model": "pixoapi.cart",
-      "pk": 1,
-      "fields": {
-        "user": 2,
-        "paid": false
-      }
+  {
+    "model": "pixoapi.cart",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "paid": false
     }
+  }
 ]
