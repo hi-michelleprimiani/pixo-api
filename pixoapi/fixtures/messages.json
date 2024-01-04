@@ -1,0 +1,102 @@
+[
+    {
+        "model": "pixoapi.message",
+        "pk": 1,
+        "fields": {
+            "sender": 5,
+            "receiver": 1,
+            "text": "Hello, this is a test message!",
+            "date_time": "2023-11-15T12:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 2,
+        "fields": {
+            "sender": 1,
+            "receiver": 5,
+            "text": "Hi there, received your message!",
+            "date_time": "2023-11-15T12:05:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 3,
+        "fields": {
+            "sender": 2,
+            "receiver": 4,
+            "text": "Hello, this is a test message!",
+            "date_time": "2023-11-15T12:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 4,
+        "fields": {
+            "sender": 4,
+            "receiver": 2,
+            "text": "Hi there, received your message!",
+            "date_time": "2023-11-15T12:05:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 5,
+        "fields": {
+            "sender": 5,
+            "receiver": 3,
+            "text": "Hello, this is a test message!",
+            "date_time": "2023-11-15T11:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 6,
+        "fields": {
+            "sender": 3,
+            "receiver": 5,
+            "text": "Hi there, received your message!",
+            "date_time": "2023-11-15T12:05:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 7,
+        "fields": {
+            "sender": 5,
+            "receiver": 1,
+            "text": "This is awesome!",
+            "date_time": "2023-11-16T12:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 8,
+        "fields": {
+            "sender": 1,
+            "receiver": 5,
+            "text": "Yay!!!",
+            "date_time": "2023-11-16T12:05:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 9,
+        "fields": {
+            "sender": 5,
+            "receiver": 1,
+            "text": "I would like to purchase one bird",
+            "date_time": "2023-11-19T12:00:00Z"
+        }
+    },
+    {
+        "model": "pixoapi.message",
+        "pk": 10,
+        "fields": {
+            "sender": 1,
+            "receiver": 5,
+            "text": "Here is your bird!!!",
+            "date_time": "2023-11-19T12:05:00Z"
+        }
+    }
+]
