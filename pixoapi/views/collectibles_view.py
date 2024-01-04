@@ -143,6 +143,7 @@ class CollectibleView(ViewSet):
         Response: Serialized updated Collectible data with HTTP 204 status on successful update, 
                 HTTP 400 Bad Request if data is invalid, or HTTP 404 Not Found if the Collectible doesn't exist.
         """
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
         try:
             collectible = Collectible.objects.get(pk=pk)
 
