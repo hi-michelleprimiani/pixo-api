@@ -60,9 +60,16 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    'https://king-prawn-app-kn67q.ondigitalocean.app'
+    'https://king-prawn-app-kn67q.ondigitalocean.app',
 )
 
+CORS_ALLOW_METHODS = (
+    'GET',
+    'PUT',
+    'POST',
+    'DELETE',
+    'OPTIONS',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,7 +84,6 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://king-prawn-app-kn67q.ondigitalocean.app",
-    # Add other allowed origins here
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
