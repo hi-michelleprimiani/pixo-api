@@ -60,6 +60,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://king-prawn-app-kn67q.ondigitalocean.app'
 )
 
 
