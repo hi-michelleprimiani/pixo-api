@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.contrib.auth.models import User
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -5,7 +6,6 @@ from rest_framework import serializers, status
 from django.http import HttpResponseServerError
 from pixoapi.models import Cart, CartItem, PixoUser, Collectible
 from pixoapi.views.image_view import ImageSerializer
-from datetime import datetime
 from django.utils.timezone import localtime
 
 
