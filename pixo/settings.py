@@ -71,6 +71,11 @@ CORS_ALLOW_METHODS = (
     'OPTIONS',
 )
 
+CORS_ALLOW_HEADERS = (
+    'Authorization',
+    'Content-Type',
+)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
