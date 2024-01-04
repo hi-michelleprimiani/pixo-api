@@ -1,51 +1,33 @@
 [
-    {
-        "model": "pixoapi.category",
-        "pk": 1,
-        "fields": {
-            "label": "Art & Collectibles"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 2,
-        "fields": {
-            "label": "Home & Living"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 3,
-        "fields": {
-            "label": "Bath & Beauty"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 4,
-        "fields": {
-            "label": "Baby & Children"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 6,
-        "fields": {
-            "label": "Garden & Outdoors"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 7,
-        "fields": {
-            "label": "Toys & Games"
-        }
-    },
-    {
-        "model": "pixoapi.category",
-        "pk": 8,
-        "fields": {
-            "label": "Under $25"
-        }
-    }
+  {
+    "model": "pixoapi.category",
+    "pk": 1,
+    "fields": { "label": "Art & Collectibles" }
+  },
+  {
+    "model": "pixoapi.category",
+    "pk": 2,
+    "fields": { "label": "Home & Living" }
+  },
+  {
+    "model": "pixoapi.category",
+    "pk": 3,
+    "fields": { "label": "Bath & Beauty" }
+  },
+  {
+    "model": "pixoapi.category",
+    "pk": 4,
+    "fields": { "label": "Baby & Children" }
+  },
+  {
+    "model": "pixoapi.category",
+    "pk": 6,
+    "fields": { "label": "Garden & Outdoors" }
+  },
+  {
+    "model": "pixoapi.category",
+    "pk": 7,
+    "fields": { "label": "Toys & Games" }
+  },
+  { "model": "pixoapi.category", "pk": 8, "fields": { "label": "Under $25" } }
 ]

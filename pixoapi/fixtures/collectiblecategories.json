@@ -1,98 +1,462 @@
 [
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 1,
-        "fields": {
-          "collectible": 1,
-          "category": 1
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 2,
-        "fields": {
-          "collectible": 1,
-          "category": 2
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 3,
-        "fields": {
-          "collectible": 2,
-          "category": 1
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 4,
-        "fields": {
-          "collectible": 2,
-          "category": 2
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 5,
-        "fields": {
-          "collectible": 3,
-          "category": 1
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 6,
-        "fields": {
-          "collectible": 4,
-          "category": 1
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 7,
-        "fields": {
-          "collectible": 5,
-          "category": 2
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 8,
-        "fields": {
-          "collectible": 6,
-          "category": 1
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 9,
-        "fields": {
-          "collectible": 6,
-          "category": 6
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 10,
-        "fields": {
-          "collectible": 7,
-          "category": 8
-        }
-    },
-    {
-        "model": "pixoapi.collectiblecategory",
-        "pk": 11,
-        "fields": {
-          "collectible": 5,
-          "category": 7
-        }
-    },
-    {
-      "model": "pixoapi.collectiblecategory",
-      "pk": 12,
-      "fields": {
-        "collectible": 7,
-        "category": 1
-      }
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 1,
+    "fields": { "category": 1, "collectible": 1 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 2,
+    "fields": { "category": 2, "collectible": 1 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 3,
+    "fields": { "category": 1, "collectible": 2 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 4,
+    "fields": { "category": 2, "collectible": 2 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 5,
+    "fields": { "category": 1, "collectible": 3 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 7,
+    "fields": { "category": 2, "collectible": 5 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 8,
+    "fields": { "category": 1, "collectible": 6 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 11,
+    "fields": { "category": 7, "collectible": 5 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 12,
+    "fields": { "category": 1, "collectible": 7 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 39,
+    "fields": { "category": 1, "collectible": 22 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 40,
+    "fields": { "category": 2, "collectible": 22 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 41,
+    "fields": { "category": 1, "collectible": 23 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 42,
+    "fields": { "category": 2, "collectible": 23 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 45,
+    "fields": { "category": 8, "collectible": 25 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 46,
+    "fields": { "category": 2, "collectible": 25 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 49,
+    "fields": { "category": 8, "collectible": 27 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 50,
+    "fields": { "category": 1, "collectible": 27 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 51,
+    "fields": { "category": 8, "collectible": 28 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 52,
+    "fields": { "category": 1, "collectible": 28 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 53,
+    "fields": { "category": 3, "collectible": 29 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 54,
+    "fields": { "category": 3, "collectible": 30 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 57,
+    "fields": { "category": 8, "collectible": 32 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 58,
+    "fields": { "category": 3, "collectible": 32 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 59,
+    "fields": { "category": 8, "collectible": 33 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 60,
+    "fields": { "category": 3, "collectible": 33 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 61,
+    "fields": { "category": 8, "collectible": 34 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 62,
+    "fields": { "category": 3, "collectible": 34 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 63,
+    "fields": { "category": 8, "collectible": 35 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 64,
+    "fields": { "category": 3, "collectible": 35 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 65,
+    "fields": { "category": 8, "collectible": 36 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 66,
+    "fields": { "category": 3, "collectible": 36 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 67,
+    "fields": { "category": 8, "collectible": 37 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 68,
+    "fields": { "category": 3, "collectible": 37 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 73,
+    "fields": { "category": 7, "collectible": 42 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 75,
+    "fields": { "category": 7, "collectible": 44 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 76,
+    "fields": { "category": 7, "collectible": 45 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 88,
+    "fields": { "category": 1, "collectible": 8 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 89,
+    "fields": { "category": 2, "collectible": 8 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 127,
+    "fields": { "category": 2, "collectible": 6 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 128,
+    "fields": { "category": 7, "collectible": 6 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 139,
+    "fields": { "category": 1, "collectible": 65 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 140,
+    "fields": { "category": 2, "collectible": 65 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 141,
+    "fields": { "category": 2, "collectible": 7 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 150,
+    "fields": { "category": 8, "collectible": 3 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 152,
+    "fields": { "category": 4, "collectible": 70 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 154,
+    "fields": { "category": 4, "collectible": 71 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 156,
+    "fields": { "category": 4, "collectible": 72 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 157,
+    "fields": { "category": 2, "collectible": 73 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 158,
+    "fields": { "category": 4, "collectible": 73 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 159,
+    "fields": { "category": 4, "collectible": 74 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 160,
+    "fields": { "category": 6, "collectible": 75 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 161,
+    "fields": { "category": 6, "collectible": 76 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 162,
+    "fields": { "category": 6, "collectible": 77 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 163,
+    "fields": { "category": 6, "collectible": 78 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 164,
+    "fields": { "category": 6, "collectible": 79 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 165,
+    "fields": { "category": 6, "collectible": 80 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 166,
+    "fields": { "category": 1, "collectible": 81 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 167,
+    "fields": { "category": 2, "collectible": 81 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 168,
+    "fields": { "category": 8, "collectible": 82 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 169,
+    "fields": { "category": 1, "collectible": 82 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 170,
+    "fields": { "category": 1, "collectible": 83 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 171,
+    "fields": { "category": 8, "collectible": 84 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 172,
+    "fields": { "category": 1, "collectible": 84 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 173,
+    "fields": { "category": 1, "collectible": 85 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 174,
+    "fields": { "category": 8, "collectible": 86 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 175,
+    "fields": { "category": 1, "collectible": 86 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 176,
+    "fields": { "category": 8, "collectible": 87 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 177,
+    "fields": { "category": 1, "collectible": 87 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 178,
+    "fields": { "category": 8, "collectible": 88 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 179,
+    "fields": { "category": 2, "collectible": 88 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 180,
+    "fields": { "category": 2, "collectible": 89 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 181,
+    "fields": { "category": 8, "collectible": 90 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 182,
+    "fields": { "category": 3, "collectible": 90 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 183,
+    "fields": { "category": 8, "collectible": 91 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 184,
+    "fields": { "category": 3, "collectible": 91 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 185,
+    "fields": { "category": 8, "collectible": 92 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 186,
+    "fields": { "category": 3, "collectible": 92 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 187,
+    "fields": { "category": 4, "collectible": 93 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 188,
+    "fields": { "category": 7, "collectible": 93 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 190,
+    "fields": { "category": 7, "collectible": 94 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 191,
+    "fields": { "category": 8, "collectible": 95 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 192,
+    "fields": { "category": 4, "collectible": 95 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 193,
+    "fields": { "category": 4, "collectible": 96 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 194,
+    "fields": { "category": 1, "collectible": 97 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 195,
+    "fields": { "category": 1, "collectible": 98 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 196,
+    "fields": { "category": 2, "collectible": 98 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 198,
+    "fields": { "category": 2, "collectible": 99 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 202,
+    "fields": { "category": 1, "collectible": 103 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 203,
+    "fields": { "category": 6, "collectible": 103 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 204,
+    "fields": { "category": 6, "collectible": 104 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 205,
+    "fields": { "category": 6, "collectible": 105 }
+  },
+  {
+    "model": "pixoapi.collectiblecategory",
+    "pk": 209,
+    "fields": { "category": 4, "collectible": 94 }
   }
 ]

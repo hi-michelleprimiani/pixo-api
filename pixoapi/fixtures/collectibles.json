@@ -1,99 +1,800 @@
 [
-    {
-      "model": "pixoapi.collectible",
-      "pk": 1,
-      "fields": {
-        "seller": 1,
-        "name": "Ramen Bowl",
-        "description": "These bowls are handmade from iron-red earthenware clay. Each piece is unique and different in some way. Made-to-order pieces take roughly 1-2 weeks to complete. Remember that we make each piece from start to finish, so please allow plenty of time for each piece to be made properly. Handmade things take time. Please message me which color you would like.",
-        "price": 47.00,
-        "material": "Iron-red Earthenware Clay",
-        "size": "8 inches in diameter and 3 inches tall",
-        "color" : " Cobalt blue, Smoke blue, Turquoise, Ruby Red, Indigo, Desert green, Teal, Moss, Speckled white, and Matte black",
-        "created_date": "2023-12-11"
-      }
-    },
-    {
-      "model": "pixoapi.collectible",
-      "pk": 2,
-      "fields": {
-        "seller": 1,
-        "name": "The Mug",
-        "description": "This mug holds approximately 10-12oz, stands up straight, and is ready for daily use. Each mug will be glazed in our classic kjp speckled white with a raw, unglazed band around its belly. You choose the accent color from our seasonal favorites, please message me with what color you would like.",
-        "price": 40.00,
-        "material": "Iron-red Earthenware Clay",
-        "size": "Holds 10-12 oz's",
-        "color" : " Cobalt blue, Smoke blue, Turquoise, Ruby Red, Indigo, Desert green, Teal, Moss, Speckled white, and Matte black",
-        "created_date": "2023-12-11"
-      }
-    },
-    {
-      "model": "pixoapi.collectible",
-      "pk": 3,
-      "fields": {
-        "seller": 2,
-        "name": "Ceramic Flower Tiles",
-        "description": "This (12) pc set of ceramic flower tiles contains a variety of bright and colorful flowers in various shapes and sizes. You will randomly receive (3) flowers in each of the four colors. If you'd prefer specific flowers in specific colors please message me and I'd be happy to create a custom order for you. These tiles would be perfect additions to your mosaic or arts and craft project. You can use them to embellish and enhance a picture frame, mirror, bird house, flowerpot, sign, etc. or use as jewelry or button cabochons. You could even attach a magnet to their backs to give your work locker or refrigerator a pop of color - so many possibilities!",
-        "price": 33.00,
-        "material": "High Quality, Non-Toxic Clay",
-        "size": "These flower tiles range in size between the smallest at approx 1/2 x 1/2 x 1/4 to the largest at approx 1 1/8 inch x 1 1/8 inch x 1/4 inch. As this is a variety set, flower sizes will vary with some tiles measuring 1/8 inch in depth.",
-        "color" : "Bright blue, orange, yellow and purple",
-        "created_date": "2023-12-11"
-      }
-    },
-    {
-      "model": "pixoapi.collectible",
-      "pk": 4,
-      "fields": {
-        "seller": 2,
-        "name": "Ceramic Moon Face and Star Tiles",
-        "description": "This 7 piece tile set contains (3) moon faces in a variety of sizes and styles and (4) swirl stars. These tiles are perfect for mosaics or any type of arts and craft project. You could use them to embellish and enhance a picture frame, birdhouse, flowerpot, mirror, etc. You could attach a magnet to their backs to give your work locker or refrigerator a pop of color or you could use as jewelry or button pieces - so many possibilities!",
-        "price": 30.00,
-        "material": "High Quality, Non-Toxic Clay",
-        "size": "These flower tiles range in size between the smallest at approx 1/2 x 1/2 x 1/4 to the largest at approx 1 1/8 inch x 1 1/8 inch x 1/4 inch. As this is a variety set, flower sizes will vary with some tiles measuring 1/8 inch in depth.",
-        "color" : "Navy and turquoise blue",
-        "created_date": "2023-12-11"
-      }
-    },
-    {
-      "model": "pixoapi.collectible",
-      "pk": 5,
-      "fields": {
-        "seller": 4,
-        "name": "Concrete Chess Set",
-        "description": "If you're a chess collector or appreciate unique and stylish decor, then this concrete chess set is a must-have. The board features a polished, smooth surface and distinctive grooved squares that make it a standout piece that is sure to impress. At approximately 3.5kg, it is sturdy enough to withstand even the most intense chess matches, and its unique design sets it apart from traditional chess boards. Our handmade concrete chess pieces are one-of-a-kind, each individually crafted with care and attention to detail. The pieces are polished to a smooth finish, making them a pleasure to handle during gameplay. They are also backed with cork to protect your chess board and provide a satisfying tactical feel while playing. These pieces are not only functional but also make a beautiful addition to any chess set collection. With their unique handmade quality, no two sets are exactly alike.",
-        "price": 111.11,
-        "material": "Concrete",
-        "size": "The chess board is 11.5 by 11.5 and is 3/4 inches thick",
-        "color" : "Black And White Concrete",
-        "created_date": "2023-12-11"
-      }
-    },    {
-      "model": "pixoapi.collectible",
-      "pk": 6,
-      "fields": {
-        "seller": 4,
-        "name": "Purple Maple Chess Set",
-        "description": "Beautiful Purple Heart and Maple chess board with a Purple Heart border and Maple splines accenting the corners.",
-        "price": 250.00,
-        "material": "Maple, Purple Heart, Wood",
-        "size": "The sizes available are 1.5 squares and border for total dimension of 15x15 or 2.0 squares and border for total dimension of 20x20",
-        "color" : "Purple, Tan, Wood",
-        "created_date": "2023-12-11"
-      }
-    },
-    {
-      "model": "pixoapi.collectible",
-      "pk": 7,
-      "fields": {
-        "seller": 5,
-        "name": "ZebraWood Comfort Bird",
-        "description": "This bird was carved out of Zebrawood, a West African hardwood. The wood is not colored or stained, but rather is finished with multiple coats of oil and varnish that bring out the natural beauty of the wood. In time the oils from your fingers and palms will add to the patina of the wood.",
-        "price": 22.00,
-        "material": "Zebrawood, a West African hardwood.",
-        "size": "1.5 x 2 x 4 inches",
-        "color" : "The Zebrawood heartwood is a light brown or cream color with dark blackish brown streaks vaguely resembling a zebras stripes.",
-        "created_date": "2023-12-11"
-      }
+  {
+    "model": "pixoapi.collectible",
+    "pk": 1,
+    "fields": {
+      "seller": 1,
+      "name": "Ramen Bowl",
+      "description": "These bowls are handmade from iron-red earthenware clay. Each piece is unique and different in some way. Made-to-order pieces take roughly 1-2 weeks to complete. Remember that we make each piece from start to finish, so please allow plenty of time for each piece to be made properly. Handmade things take time. Please message me which color you would like.",
+      "price": "47.00",
+      "material": "Iron-red Earthenware Clay",
+      "color": " Cobalt blue, Smoke blue, Turquoise, Ruby Red, Indigo, Desert green, Teal, Moss, Speckled white, and Matte black",
+      "size": "8 inches in diameter and 3 inches tall",
+      "created_date": "2023-12-11T00:00:00Z"
     }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 2,
+    "fields": {
+      "seller": 1,
+      "name": "The Mug",
+      "description": "This mug holds approximately 10-12oz, stands up straight, and is ready for daily use. Each mug will be glazed in our classic kjp speckled white with a raw, unglazed band around its belly. You choose the accent color from our seasonal favorites, please message me with what color you would like.",
+      "price": "40.00",
+      "material": "Iron-red Earthenware Clay",
+      "color": " Cobalt blue, Smoke blue, Turquoise, Ruby Red, Indigo, Desert green, Teal, Moss, Speckled white, and Matte black",
+      "size": "Holds 10-12 oz's",
+      "created_date": "2023-12-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 3,
+    "fields": {
+      "seller": 2,
+      "name": "Ceramic Flower Tiles",
+      "description": "This (12) pc set of ceramic flower tiles contains a variety of bright and colorful flowers in various shapes and sizes. You will randomly receive (3) flowers in each of the four colors. If you'd prefer specific flowers in specific colors please message me and I'd be happy to create a custom order for you. These tiles would be perfect additions to your mosaic or arts and craft project. You can use them to embellish and enhance a picture frame, mirror, bird house, flowerpot, sign, etc. or use as jewelry or button cabochons. You could even attach a magnet to their backs to give your work locker or refrigerator a pop of color - so many possibilities!",
+      "price": "23.00",
+      "material": "High Quality, Non-Toxic Clay",
+      "color": "Bright blue, orange, yellow and purple",
+      "size": "These flower tiles range in size between the smallest at approx 1/2 x 1/2 x 1/4 to the largest at approx 1 1/8 inch x 1 1/8 inch x 1/4 inch. As this is a variety set, flower sizes will vary with some tiles measuring 1/8 inch in depth.",
+      "created_date": "2023-12-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 5,
+    "fields": {
+      "seller": 4,
+      "name": "Concrete Chess Set",
+      "description": "If you're a chess collector or appreciate unique and stylish decor, then this concrete chess set is a must-have. The board features a polished, smooth surface and distinctive grooved squares that make it a standout piece that is sure to impress. At approximately 3.5kg, it is sturdy enough to withstand even the most intense chess matches, and its unique design sets it apart from traditional chess boards. Our handmade concrete chess pieces are one-of-a-kind, each individually crafted with care and attention to detail. The pieces are polished to a smooth finish, making them a pleasure to handle during gameplay. They are also backed with cork to protect your chess board and provide a satisfying tactical feel while playing. These pieces are not only functional but also make a beautiful addition to any chess set collection. With their unique handmade quality, no two sets are exactly alike.",
+      "price": "111.11",
+      "material": "Concrete",
+      "color": "Black And White Concrete",
+      "size": "The chess board is 11.5 by 11.5 and is 3/4 inches thick",
+      "created_date": "2023-12-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 6,
+    "fields": {
+      "seller": 4,
+      "name": "Purple Maple Chess Set",
+      "description": "Beautiful Purple Heart and Maple chess board with a Purple Heart border and Maple splines accenting the corners.",
+      "price": "250.00",
+      "material": "Maple, Purple Heart, Wood",
+      "color": "Purple, Tan, Wood",
+      "size": "The sizes available are 1.5 squares and border for total dimension of 15x15 or 2.0 squares and border for total dimension of 20x20",
+      "created_date": "2023-12-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 7,
+    "fields": {
+      "seller": 5,
+      "name": "Zebra Wood Comfort Bird",
+      "description": "This bird was carved out of Zebrawood, a West African hardwood. The wood is not colored or stained, but rather is finished with multiple coats of oil and varnish that bring out the natural beauty of the wood. In time the oils from your fingers and palms will add to the patina of the wood.",
+      "price": "32.00",
+      "material": "Zebrawood, a West African hardwood.",
+      "color": "The Zebrawood heartwood is a light brown or cream color with dark blackish brown streaks vaguely resembling a zebras stripes.",
+      "size": "1.5 x 2 x 4 inches",
+      "created_date": "2023-12-11T00:00:00Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 8,
+    "fields": {
+      "seller": 5,
+      "name": "Three Little Birds",
+      "description": "Three Little Birds Oak Wooden Sculpture Set—where art meets melody in a charming display of inspiration. This delightful trio pays homage to the timeless lyrics of Bob Marley and the Wailers' Three Little Birds, infusing your space with a touch of musical magic.",
+      "price": "59.99",
+      "material": "Oak Wood",
+      "color": "Brown, Natural Beige, Black Finish",
+      "size": "9.2x5.3x7 cm",
+      "created_date": "2023-12-06T18:46:12.288Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 22,
+    "fields": {
+      "seller": 5,
+      "name": "Wooden Black Rabbit",
+      "description": "2023, it is the Year of the Black Rabbit.\nRabbits are symbolized prosperity, abundance, good luck, and fertility.\n\nThis Rabbit would be a great unisex present for your friend, husband, colleague, girlfriend, or parents for different occasions, such as Birthday, Housewarmings, Anniversary, Father's Day, Christmas, Independence Day, New Year's, Thanksgiving, and any event: Birthday, Anniversary, Baptism, Graduation, Housewarming, Wedding, Christmas, Father`s Day, New Year`s, Thanksgiving\nYou could complete your interior in a Classic or Scandinavian style, you can also decorate a space in a Minimalist or Bohemian style with this product.",
+      "price": "79.99",
+      "material": "Oak Wood",
+      "color": "Brown or Black Finishing",
+      "size": "19x11x19 cm",
+      "created_date": "2023-12-08T19:07:21.926Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 23,
+    "fields": {
+      "seller": 5,
+      "name": "Wooden Cat Statue",
+      "description": "The cat is a symbol of independence, cunning, curiosity, ingenuity and femininity. This interior item will fit to home, apartment, or office.\nThis stylish and unique piece is here to help you complete your interior in a Classic or Scandinavian style, you can also decorate a space in a Minimalist or Bohemian style with this product.\nFeaturing a universal brown or black finish, this statue will make a great addition to any type of decor.\nPlace it atop your desk, bookshelf, mantle, end table, or anywhere you prefer to show off your love for these incredible and majestic creature.\n\nDue to the handmade nature of this product and the settings of your screen, the color of a finish can have a difference from the photo.",
+      "price": "55.99",
+      "material": "Oak Wood",
+      "color": "Black or Brown Finishing",
+      "size": "102x60x250 mm",
+      "created_date": "2023-12-08T19:09:14.880Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 25,
+    "fields": {
+      "seller": 1,
+      "name": "Small Bowls",
+      "description": "The KJ Pottery small bowl is the do-all of cute and small and functional. These bowls are prefect for sauces, ice cream, cooking prep, ring dish, you name it!\n\nThis listing is for (3) bowls\n\nThese little bowls are dishwasher, microwave, and oven safe.\nPlease reach out if you have questions!",
+      "price": "24.99",
+      "material": "Ceramic",
+      "color": "Colors may vary. one beige, one eggshell, one granite",
+      "size": "These bowls measure 4.5’’ wide and 1.5’’ tall. And hold approximately 8 oz.",
+      "created_date": "2023-12-08T19:16:51.198Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 27,
+    "fields": {
+      "seller": 2,
+      "name": "Mosaic Blossom Flower Tiles",
+      "description": "These are a mixed color pack , but if you would prefer to choose which colors then please just contact me.\nI cut my tiles from only high quality clay and twice kiln fire. The second firing is to a very high temperature making them more durable and able to withstand outdoor elements although care should be taken in extreme conditions\nThe tiles are glazed so no problem with grouting\nPlease have a look at my other items for more specialist tiles e.g flowers, various leaves, numbers and letters. if you cannot find exactly what you are looking for then please contact me as I may be able to help.",
+      "price": "12.99",
+      "material": "Porcelain",
+      "color": "Mixed",
+      "size": "approx 1.2 cm diameter",
+      "created_date": "2023-12-08T19:24:57.616Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 28,
+    "fields": {
+      "seller": 2,
+      "name": "Daisy Tiles",
+      "description": "14 black with white centres daisy style flowers\nCeramic tiles perfect for adding a unique touch to your mosaic or similar project\nI cut my tiles from high quality clay and twice kiln fire to very high temperatures so they are suitable for out doors (although care should be taken in extreme conditions)",
+      "price": "12.52",
+      "material": "clay, glaze, ceramic, kiln fired, mosaic",
+      "color": "black and white",
+      "size": "1.7 cm diameter and approx. 3 mm thick",
+      "created_date": "2023-12-08T19:26:51.068Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 29,
+    "fields": {
+      "seller": 6,
+      "name": "Soaps For Men Gift Box",
+      "description": "Give a man something he can actually use with these fragrant natural soap bars. Each bar is a nice 3.5 ounce rustic cut bar. Each bar is labeled and neatly packed in a kraft recyclable gift box. In one gift box you get four (4) soaps.\n\nThis gift box will include top-selling soaps (mostly what is pictured) that men love and have bought again and again. If you have a special request for scents, please leave a note during checkout or message us. The list below are scents we offer, however we can not guarantee every scent is always available at the time of order. Some soaps have exfoliates.",
+      "price": "29.99",
+      "material": "Quality rich shea butter, coconut oil, olive oil, essential oils",
+      "color": "~ Bohemian Musk ~ Cedar Tree ~ Eucalyptus Lemon ~ Forest Fruit ~ Frankincense & Myrrh ~ Forest Pine ~ Fresh Cotton ~ Hippie Soap ~ Irish Stream ~ Pure Lavender ~ Lemongrass ~ Lavender Patchouli ~ Moonwater ~ Midnight Musk (exfoliating) ~ Sweet Woods (exfoliating) ~ Summer Fruit ~ Tree Sap (exfoliating) ~ Tea Tree ~ Unscented-Shea Butter ~ Vanilla Oak",
+      "size": "3.5 oz rustic cut bar",
+      "created_date": "2023-12-08T19:41:08.132Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 30,
+    "fields": {
+      "seller": 6,
+      "name": "Soaps For Women Gift Box",
+      "description": "All-natural handmade soaps are the perfect gift idea for family and friends. It is a gift that anyone can use no matter their age. This gift box will include your choice of four or six bars of top selling variety scented soaps.",
+      "price": "29.99",
+      "material": "Quality rich shea butter, coconut oil, olive oil, essential oils",
+      "color": "~ Cherry Almond ~ Bohemian Musk ~ Cedar Tree ~ Eucalyptus Lemon ~ Forest Fruit ~ Frankincense & Myrrh ~ Forest Pine ~ Fresh Cotton ~ Hippie Soap ~ Irish Stream ~ Pure Lavender ~ Lemongrass ~ Lavender Patchouli ~ Moonwater ~ Midnight Musk ~ Sweet Woods ~ Summer Fruit ~ Tree Sap ~ Tea Tree ~ Unscented-Shea Butter ~ Vanilla Oak",
+      "size": "3.5 oz rustic cut bar",
+      "created_date": "2023-12-08T19:43:11.682Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 32,
+    "fields": {
+      "seller": 6,
+      "name": "Lavender Soap",
+      "description": "Lavender soap is my second favorite of all the soaps we create here at SheaGarden. In fact, lavender oil is the only essential oil that I make myself with lavender plants that I grow. This Lavender Handmade Soap has a delicate and unmistakable scent that all lovers of the Mediterranean Lavandula plant will enjoy. The floral layers of this earthy scent has a delightful presence that will intrigue your sense of smell. If you do not like the natural (none synthetic) scent of lavender, then you may want to skip this soap. If you are looking for the real thing however, you may want to add this to your cart.",
+      "price": "6.00",
+      "material": "lavender oil, essential oil, distilled water, sodium hydroxide, olive oil, coconut oil, shea butter",
+      "color": "Lavender",
+      "size": "3.5 oz rustic cut bar",
+      "created_date": "2023-12-08T20:07:27.921Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 33,
+    "fields": {
+      "seller": 6,
+      "name": "Lemongrass Soap",
+      "description": "This handmade soap bar has a very pleasant herbal lemon scent, with undertones of ginger root spice. The creamy lather and refreshing scent is one of the most pleasing cleansers we have to offer. No color or exfoliates are added. All natural and rustic.",
+      "price": "6.00",
+      "material": "lemongrass oil, ginger root oil, essential oil, distilled water, sodium hydroxide, olive oil, coconut oil, shea butter",
+      "color": "Lemon",
+      "size": "3.5 oz rustic cut bar",
+      "created_date": "2023-12-08T20:09:15.024Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 34,
+    "fields": {
+      "seller": 6,
+      "name": "Summer Fruit Soap",
+      "description": "Take a walk in the garden and pick some raspberries and peaches, mix it with a mild floral blend and you have the perfect soap bar! Robust and delightful, the perfect decoration for your bathroom or kitchen. Rich lather, healthy for you whole body. Use as hand or body soap.",
+      "price": "6.00",
+      "material": "fruit fragrance oil, essential oil, distilled water, sodium hydroxide, olive oil, coconut oil, shea butter",
+      "color": "Purple - Raspberries & Peaches ",
+      "size": "3.5 oz rustic cut bar ",
+      "created_date": "2023-12-08T20:11:20.985Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 35,
+    "fields": {
+      "seller": 7,
+      "name": "Turmeric & Shea Butter Night Cream",
+      "description": "Restore a sense of calm with our deeply nourishing + balancing night cream. Our highly concentrated facial moisturizer was created to calm even the fussiest of skin. Formulated with skin-nourishing oils, and calming botanicals, these plant proteins work in harmony over time to deliver beautiful, radiant skin.\n\nOur night cream begins by infusing a house made herbal blend in silky smooth oils using a double extraction process. This process allows us to extract as much of the plant's renewal properties as possible. To those oils we have added in additional skin-loving superstars, such as Rose Hydrosol and Shea Nilotica Butter. Essential oils of Frankincense, Helichrysum, Roman Chamomile and Rose Geranium were also added to this formula for their deeply nourishing and restorative properties.",
+      "price": "15.50",
+      "material": "Ingredients: Grapeseed Oil infused with: Plantain, Comfrey, White Willow Bark, Yarrow & Calendula, Organic Extra Virgin Coconut Oil, Rose Hydrosol, Aloe Vera, Sea Buckthorn Extract, Shea Nilotica Butter, Beeswax, Lanolin, Turmeric Extract, Vitamin E Oil, Essential Oils of: Rose Geranium, Roman Chamomile, Frankincense, Lavender and Helichrysum",
+      "color": "Natural",
+      "size": "1 fluid oz ",
+      "created_date": "2023-12-08T20:17:52.981Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 36,
+    "fields": {
+      "seller": 7,
+      "name": "Black Drawing Salve",
+      "description": "Throughout history, folk methods have been utilized to unlock the natural potential of plants. Bentonite and Activated Charcoal are known for their drawing properties, so we've added a healthy dose of each and a bevy of skin loving herbs for this powerful compound. Our handmade Black Drawing Salve combines the power of nourishing oils and carefully selected botanicals to offer a potent herbal formula. Our salve begins with a double infusion process that allows us to extract much more of the amazing properties of each herb used. Following traditional folk methods, this salve is prepared with love + intention using a blend of high quality oils.",
+      "price": "10.95",
+      "material": "Ingredients: Avocado Oil infused with: Chickweed, Yarrow, Plantain, Comfrey, St. John's Wort, Calendula and Lavender, Castor Oil, Beeswax, Bentonite Clay, Activated Charcoal, Lavender Absolute, Tea Tree Essential Oil",
+      "color": "Black",
+      "size": "1 fluid oz",
+      "created_date": "2023-12-08T20:21:27.205Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 37,
+    "fields": {
+      "seller": 7,
+      "name": "Rosemary Hair Oil",
+      "description": "The Argan + Rosemary Mega Growth Elixir is a potent blend of high quality, nourishing herbs and oils. Our nutrient-dense growth oil is suitable for ALL hair types and begins with a house made blend of Horsetail, Nettle, Burdock Root, Hibiscus, Red Clover Tops, Oat Straw, Calendula, Elderberry, Licorice Root, Dandelion Root and Marshmallow Root. Each herb in this blend was selected with total hair + scalp care in mind.\n\nThis botanical blend is then infused into nourishing oils of Argan Oil, Jojoba Oil, Macadamia Nut Oil, Coconut Oil and Castor oil in a multi-day, double infusion process that helps extract as much of the purported benefits of each herb as possible. This is truly a labor of love and an exquisite oil to add to your self care ritual.\n\n🜃 Suggested Use: Apply directly to the scalp and gently massage for 2-3 minutes. Apply a few extra drops to the length of your hair, and gently work the product down the entire hair shaft. - Use 3-4 times per week. A little goes a long way!\n\n🜃 This hair oil can also be used to detangle + soften, as a pre shampoo treatment, as a luxurious hot oil treatment, and can be added to store bought conditioners.",
+      "price": "25.00",
+      "material": "Ingredients: Argan Oil, Macadamia Nut Oil, Organic Jojoba Oil infused with: Horsetail, Nettle, Burdock Root, Hibiscus, Red Clover Tops, Oat Straw, Calendula, Elderberry, Licorice Root, Dandelion Root, Marshmallow Root, Organic Extra Virgin Coconut Oil, Castor Oil, Rosemary Essential Oil, Ylang Ylang Essential Oil, Vitamin E Oil",
+      "color": "Natural",
+      "size": "4oz//120ml - glass bottle with dropper.",
+      "created_date": "2023-12-08T20:23:35.117Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 42,
+    "fields": {
+      "seller": 8,
+      "name": "Ecologies Card Game",
+      "description": "Create balanced ecologies while trying to unbalance opponents.\n\nIn ECOLOGIES, you build and maintain food webs in diverse biomes around the world. Each biome has a different ecology, and gives unique rewards when it is healthy and balanced. But watch out, your opponents may decide it's easier to disturb and degrade your ecosystems than nurture their own. In this hectic environment, you must choose how best to protect and care for your ecologies.\n\nDesigned by a biology teacher, the game includes 77 unique organisms, 7 biomes, and beautiful vintage Victorian art. (108 cards total)\n\nPlayers: 1-6\nAges: 12+ (8+ with included simplified rules)\nTime: 60-90 minutes\nGame Modes: Standard, Simplified, Single Player\n\nThe goal is to build healthy food webs in different biomes. If you create a healthy ecology you are rewarded with the perks and powers of that biome. Each organism card lists what it eats and what it’s eaten by. Cards are arranged with plants on the bottom, predators on top. There is a trade mechanic similar to Catan where players trade with others based on what their individual needs are. It is a race to get 12 victory points and different organisms give different points. There are biotic/abiotic factor cards that can affect opponents and different strategies such as focusing on one biome, going for perks and bonuses, or disrupting other ecologies.\n\nThe game takes inspiration from titles like Settlers of Catan, Agricola, and Dominion. The gameplay is rooted in authentic science, as it is used in the classroom to teach real concepts to biology students. While it is scientific enough for the classroom, it is also strategic enough for any game night.",
+      "price": "30.00",
+      "material": "cards, rulebook, box",
+      "color": "",
+      "size": "",
+      "created_date": "2023-12-08T21:03:26.673Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 44,
+    "fields": {
+      "seller": 8,
+      "name": "Drylands Board Game",
+      "description": "Our new game “Drylands” is now available!\n\nSet in Africa’s Sahel region, the game uses Africa’s “Great Green Wall” as its backdrop.\n\nThe Great Green Wall is a multinational project aimed at planting a continuous belt of trees across Africa to stop the spread of desertification.\n\nDrylands are fragile ecosystems where deserts border savanna and/or forest biomes. These places can easily be degraded into desert like conditions or nurtured to be greener and more productive. It depends on how the land is managed.\n\nIn this two player game the desert player competes with the forest player to decide the outcome of a small section of drylands.\n\nThe gameplay and strategy is abstract, reminiscent of Othello, Go, or Reversi, where the objective is to flip opponent tiles.\n\nEach turn players can “grow” by placing a new tile next to their established tiles, or they can “leap” using an existing tile to move to a location farther away.\n\nWhenever you place one of your tiles next to opponent tiles, either through growing or leaping, those opponent tiles flip and become yours.\n\nThis is made slightly more complicated by one-way barrier tiles (rivers and mountains) that block the path of players. Forest tiles can leap over rivers, but not mountains. Desert tiles can leap over mountains, but not rivers.\n\nA game that’s easy to learn but hard to master, it is suitable for a wide range of ages, from 5 to 105.\n\nIn the box is a large quad fold game board (14.5\"x14.5\") and five rigid tile sheets (20 tiles per sheet = 100 tiles total) You actually only need 4 tile sheets to play the game, but we included an extra sheet of tiles because we know small pieces are easy to lose and we wanted players to have plenty of extra tiles just in case.",
+      "price": "34.00",
+      "material": "Quad Fold Game Board ",
+      "color": "",
+      "size": "In the box is a large quad fold game board (14.5\"x14.5\") and five rigid tile sheets (20 tiles per sheet = 100 tiles total)",
+      "created_date": "2023-12-08T21:23:47.308Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 45,
+    "fields": {
+      "seller": 8,
+      "name": "1000 Piece Puzzle \"Hidden Habitat\"",
+      "description": "Our 1000 piece “Hidden Habitat” puzzle features the same vintage art used in our “Ecologies: Hidden Habitats” card game. It showcases a detailed intertidal scene full of diverse marine organisms.\n\nThis puzzle is very large, measuring 27.6 inches by 19.7 inches when finished.\n\nWe also use an anti-glare matte lamination process for the surface finishing to improve durability and cut out the shine of normal gloss varnish, making it easier to see the fine details.\n\nThe inner box features bonus biological facts about different marine animals, along with detailed art.\n\nThe thick cardboard pieces have a white backing and fit together well.\n\n* Warning: small parts. Not for children under 3 or any individuals who have a tendency to place inedible objects in their mouths.",
+      "price": "28.00",
+      "material": "Cardboard, Ink, 1000 pieces",
+      "color": "",
+      "size": "* Warning: small parts. Not for children under 3 or any individuals who have a tendency to place inedible objects in their mouths.",
+      "created_date": "2023-12-08T21:29:47.306Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 65,
+    "fields": {
+      "seller": 5,
+      "name": "Wooden Bear",
+      "description": "🐻 Bears symbolize strength, courage, family, and leadership. This wooden bear sculpture embodies these qualities, serving as a reminder of the power and majesty of nature.\n\n🌲 Crafted from premium oak wood and finished in brown and black color, this bear sculpture captures the essence of the wilderness. It exudes an air of strength and dignity, celebrating the beauty found in the natural world.\n\n🏠 Designed to seamlessly complement various interior styles, from modern to rustic. Its rich black hue creates a captivating contrast that draws the eye, making it an ideal addition to any space.\n\n🎁 An exquisite present for those who appreciate the symbolism of bears—strength, courage, and leadership. Perfect for birthdays, housewarmings, or any occasion that warrants a touch of artistic beauty.\n\n✨Every detail is meticulously handcrafted, showcasing our commitment to producing pieces of unparalleled quality. Our dedication to eco-friendly practices extends to our use of organic packaging.\n\nPlease message me which color you would like",
+      "price": "59.99",
+      "material": "Oak Wood",
+      "color": "Brown or Black Finishing",
+      "size": "2x3 inches",
+      "created_date": "2023-12-13T15:46:40.802Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 70,
+    "fields": {
+      "seller": 14,
+      "name": "Solar System Mobile Crib",
+      "description": "If you are looking for something special to decorate a boy nursery, then this eco needle felted solar system mobile is for you. You can use this space mobile not only as a baby mobile, but also as educational decor for a kid's room for boys and girls under 12-14 years old. Such a planets mobile is made of 100% sheep wool and has long threads so that you can hang it on any hook at the desired height (hook is not included).\n\n*** Mobile will include:\n\nOnce you've chosen a planet style, you can choose what your mobile will include:\n\n*Astronaut: only Solar System + astronaut, without Pluto;\n*Astronaut + Pluto: Solar System + astronaut + Pluto;\n\n*Rocket: only Solar System + Rocket, without Pluto;\n*Rocket + Pluto: Solar System + Rocket + Pluto;\n\n*Astronaut + Rocket + UFO: only Solar System + Astronaut + Rocket + UFO, without Pluto;\n*Astronaut + Rocket + UFO + Pluto: Solar System + Astronaut + Rocket + UFO + Pluto;\n\n*Astronaut + Rocket: only Solar System + Astronaut + Rocket, without Pluto;\n*Astronaut + Rocket + Pluto: Solar System + Astronaut + Rocket + Pluto;\n\n***You can also choose a boy/girl or neutral astronaut or rocket for your mobile.",
+      "price": "80.00",
+      "material": "wool, metal ring, felt, felted, wooden bead, cord",
+      "color": "Mixed array of pale colors",
+      "size": "Dimensions are approximate:  Base width - 8'' (20 cm) length from the base - 6 3/4\" - 8 1/2'' (17 cm - 21,5 cm) Maximum cord's length for fastening - 32'' (81 cm)",
+      "created_date": "2023-12-20T18:27:59.398Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 71,
+    "fields": {
+      "seller": 14,
+      "name": "Bumble Bee Baby Mobile",
+      "description": "If you are looking for something special for your kids' room or nursery, then this bee mobile is for you and will be perfect as a nursery mobile, Woodland mobile or for decorating a room in a farmhouse or nature styles. This needle felted bumble bee mobile will be also wonderful as a crib mobile or just as a bee baby shower gift.",
+      "price": "75.00",
+      "material": "wool, felt, felted, needle felted, ring, glue, cord, fabric",
+      "color": "White, Yellow, Black",
+      "size": "Dimensions are approximate:  Base width - basic 7\" (18 cm)  length from the top of the base - 8\" (20 cm)  Maximum cords' length for fastening - 32'' (81 cm), if you need more, let me know.",
+      "created_date": "2023-12-20T18:32:18.009Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 72,
+    "fields": {
+      "seller": 14,
+      "name": "Whale Mobile",
+      "description": "If you are looking for something special to decorate your boy or girl nursery, then this needle felted whale mobile is for you. Such a space mobile is made of 100% sheep wool + glitter fabric and has long cords so that you can hang it on any hook at the desired height (hook is not included).",
+      "price": "59.00",
+      "material": "wool, metal ring, felt, felted, cord, glass beads, glitter fabric",
+      "color": "I use natural undye white wool. The clouds look a bit creamy.",
+      "size": "Base width - 7'' (18 cm) length from the base - 8 1/2'' (21,5 cm) Maximum cords' length for fastening - 32'' (81 cm)",
+      "created_date": "2023-12-20T18:34:16.532Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 73,
+    "fields": {
+      "seller": 14,
+      "name": "Bird & Sunflower Mobile",
+      "description": "If you are looking for something special for your kids' room, nursery, living room, then this needle felted tit bird mobile is for you. This sunflower mobile will be a wonderful as a girl baby mobile, woodland crib mobile nursery.\n\n*** Options:\n\n\"Mobile with leaves\"\n\"Mobile without leaves\"\nPlease message me with your preference",
+      "price": "90.00",
+      "material": "wool, felt, metal base, needle felted, cord, bead, artificial flowers",
+      "color": "Mixed blues, yellows, cream, off white",
+      "size": "Width - 7'' (17.5 cm) length from the top of the base - 8 1/4\" - 9'' Maximum cords' length for fastening - 37'' (92,5 cm)",
+      "created_date": "2023-12-20T18:51:00.911Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 74,
+    "fields": {
+      "seller": 14,
+      "name": "Swam Mobile",
+      "description": "If you are looking for something special for your kids' room, nursery, living room, then this swan mobile is for you. This bird mobile will be a wonderful as a girl baby mobile.",
+      "price": "70.00",
+      "material": "wool, felt, metal base, needle felted, cord, bead",
+      "color": "White",
+      "size": "Width - 11 1/2'' (29 cm) length from the top of the base - 9'' (23 cm) Maximum cords' length for fastening - 37'' (92,5 cm)",
+      "created_date": "2023-12-20T18:52:31.002Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 75,
+    "fields": {
+      "seller": 15,
+      "name": "Herb Garden Trio",
+      "description": "Herb Garden Trio - Mason Jar Hydroponic Kit Set (Rosemary, Lavender, Oregano)\n\nHerb Garden Trio Includes:\n✓ 1 Rosemary mason jar hydroponic kit\n✓ 1 Lavender mason jar hydroponic kit\n✓ 1 Oregano mason jar hydroponic kit\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic mason jar Herb set can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nHerb Day Everyday\nYou can plant and have easy access to your favorite herb at home with this kit. Nothing is more exciting than having your own home grown fresh herbs every day. These plant herbs will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis herb garden trio is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.",
+      "price": "28.99",
+      "material": "Rosemary, Lavender, Oregano",
+      "color": "",
+      "size": "3 16 oz mason jars",
+      "created_date": "2023-12-20T19:04:36.989Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 76,
+    "fields": {
+      "seller": 15,
+      "name": "Italian Herb Blend Garden Bundle",
+      "description": "Italian Herb Blend Garden Bundle- Mason Jar Hydroponic Kit Set with Organic Seeds(Basil, Marjoram, Oregano, Rosemary)\n\nItalian Herb Blend Garden Bundle Includes:\n✓ 1 Basil mason jar hydroponic kit\n✓ 1 Marjoram mason jar hydroponic kit\n✓ 1 Oregano mason jar hydroponic kit\n✓ 1 Rosemary mason jar hydroponic kit\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic Italian Herb Blend mason jar set can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nHerb Day Everyday\nYou can plant and have easy access to your favorite herbs at home with this kit. Nothing is more exciting than having your own home grown fresh herbs every day. These plant herbs will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis Italian Herb Blend garden bundle is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.",
+      "price": "39.00",
+      "material": "Basil, Marjoram, Oregano, Rosemary",
+      "color": "",
+      "size": "4 16oz Mason Jars ",
+      "created_date": "2023-12-20T19:05:46.493Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 77,
+    "fields": {
+      "seller": 15,
+      "name": "Mediterranean Herb Mix",
+      "description": "Mediterranean Herb Mix Garden Bundle- Mason Jar Hydroponic Kit Set with Organic Seeds(Rosemary, Cilantro, Oregano, Basil)\n\nMediterranean Herb Mix Garden Bundle Includes:\n✓ 1 Rosemary mason jar hydroponic kit\n✓ 1 Cilantro mason jar hydroponic kit\n✓ 1 Oregano mason jar hydroponic kit\n✓ 1 Basil mason jar hydroponic kit\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic Mediterranean Herb Mix mason jar set can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nHerb Day Everyday\nYou can plant and have easy access to your favorite herbs at home with this kit. Nothing is more exciting than having your own home grown fresh herbs every day. These plant herbs will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis Mediterranean Herb Mix garden bundle is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.",
+      "price": "59.99",
+      "material": "Rosemary, Cilantro, Oregano, Basil",
+      "color": "",
+      "size": "",
+      "created_date": "2023-12-20T19:06:49.663Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 78,
+    "fields": {
+      "seller": 15,
+      "name": "Pepper Hydroponic Kit",
+      "description": "Pepper Garden Trio - Mason Jar Hydroponic Kit Set with Organic Seeds (Sweet Pickle Pepper, Sweet Nardello Pepper, Jalapeno Early Pepper)\n\n\nPepper Garden Trio Includes:\n✓ 1 sweet pickle pepper mason jar hydroponic kit\n✓ 1 sweet nardelli pepper mason jar hydroponic kit\n✓ 1 jalapeño early pepper mason jar hydroponic kit\n\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic mason jar pepper set can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nPepper Day Everyday\nYou can plant and have easy access to your favorite pepper at home with this kit. Nothing is more exciting than having your own home grown fresh peppers every day. These plant peppers will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis pepper garden trio is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.",
+      "price": "49.99",
+      "material": "Sweet Pickle Pepper, Sweet Nardello Pepper, Jalapeno Early Pepper",
+      "color": "",
+      "size": "3 16 oz Mason Jars ",
+      "created_date": "2023-12-20T19:08:06.182Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 79,
+    "fields": {
+      "seller": 15,
+      "name": "Tomato Hydroponic Kit Set",
+      "description": "Tomato Garden Trio - Mason Jar Hydroponic Kit Set with Organic Seeds(Cherry Tomato - Tiny Tim, Red Robin Tomato, Sweetie Cherry Tomato)\n\nTomato Garden Trio Includes:\n✓ 1 Cherry Tomato - Tiny Tim mason jar hydroponic kit\n✓ 1 Red Robin Tomato mason jar hydroponic kit\n✓ 1 Sweetie Cherry Tomato mason jar hydroponic kit\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic mason jar Tomato set can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nTomato Day Everyday\nYou can plant and have easy access to your favorite Tomato at home with this kit. Nothing is more exciting than having your own home grown fresh Tomatos every day. These plant Tomatos will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis Tomato garden trio is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.",
+      "price": "49.99",
+      "material": "Cherry Tomato - Tiny Tim, Red Robin Tomato, Sweetie Cherry Tomato",
+      "color": "",
+      "size": "3 16oz Mason Jars ",
+      "created_date": "2023-12-20T19:08:57.254Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 80,
+    "fields": {
+      "seller": 15,
+      "name": "Mason Jar Hydroponic Kit - Single",
+      "description": "Self-watering hydroponic plant kit .\n\nKit Includes:\n✓ 1 32oz mason jar\n✓ 1 net pot with wick\n✓ 1 pre-seeded growing plug with non-GMO Basil seeds\n\nQuick Start\n✓ Remove the lid ring and the net pot from the mason jar.\n✓ Add 2 cups (16oz) of water to the jar.\n✓ Place the net pot and the lid ring back to its place.\n✓ Remove the plug cover in 7 days or when the seeds begin to sprout.\n\nLow Maintenance\nThis self-watering growing kit requires very low daily maintenance. The wick will pull water from the jar to the plant root which ensures the plant takes enough water it needs. No need to water frequently. Just refill the jar when there is not much water left.\n\nBeautiful and Safe Home Decor\nThis artistic herb mason jar can lighten up any home. You can put it on your windowsill, your kitchen counter or anywhere you like. All the seeds are heirloom seeds. We assure you that you can purchase with confidence for you and your loved ones.\n\nHerb Day Everyday\nYou can plant and have easy access to your favorite herb at home with this kit. Nothing is more exciting than having your own home grown fresh herbs every day. These plant herbs will surely add flavor to your dishes and more color to your home.\n\nGreat Gardening Gift\nThis kit is a perfect gift for anyone: cooking enthusiasts, aspiring gardeners, and even those who just want to grow something.\n\nPlease message me which herb you would like! ",
+      "price": "21.99",
+      "material": "Options include - Tarragon, Lavender, Lemon Balm, Basil, Catnip, Peppermint",
+      "color": "",
+      "size": "1 16 oz jar",
+      "created_date": "2023-12-20T19:16:11.580Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 81,
+    "fields": {
+      "seller": 16,
+      "name": "Old Couple Wood Figures",
+      "description": "Vintage reclaimed wood shingle carved sculptured folk art\n\nHas some minor wear. Please note one hanger on back is coming loose.",
+      "price": "52.99",
+      "material": "Vintage Reclaimed Wood Shingle",
+      "color": "Mixed",
+      "size": "Measures approximately 12.5\" x 5\" and 12.25\" x 5\"",
+      "created_date": "2023-12-22T14:15:33.789Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 82,
+    "fields": {
+      "seller": 16,
+      "name": "Wood Sailor Fisherman In Raincoat",
+      "description": "Has some minor wear. Does have some cracking on back, seen in photos.",
+      "price": "16.99",
+      "material": "Vintage Hand Carved Wood",
+      "color": "Mixed - Acrylic Paint",
+      "size": "Measures approximately 6\" x 1.75\" x 1.5\"",
+      "created_date": "2023-12-22T14:17:18.993Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 83,
+    "fields": {
+      "seller": 16,
+      "name": "Wood Sailor Fisherman",
+      "description": "Has some minor wear. Missing buttons. Signed by artist on bottom",
+      "price": "32.00",
+      "material": "Vintage Reclaimed Wood",
+      "color": "Mixed - Acrylic Paint",
+      "size": "Measures approximately 5.5\" x 2.25\" x 1.75\"",
+      "created_date": "2023-12-22T14:19:19.847Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 84,
+    "fields": {
+      "seller": 16,
+      "name": "Wood Sailor Fisherman",
+      "description": "Vintage Hand Carved Wood Sailor Fisherman With Pipe Decor - Folk Art Hand Carving Old Salty Captain Figurine\n\nHas some minor wear",
+      "price": "19.00",
+      "material": "Vintage Reclaimed Wood",
+      "color": "Mixed - Acrylic Paint",
+      "size": "Measures approximately 6\" x 1.75\" x 1.25\"",
+      "created_date": "2023-12-22T14:27:55.608Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 85,
+    "fields": {
+      "seller": 16,
+      "name": "Large Tiger Statue ",
+      "description": "Has some minor wear. One chip on paw as seen in photos. One eye is painted \"poorly\" and makes the tiger seem a little cross eyed when looking straight on.\n",
+      "price": "117.00",
+      "material": "Ceramic",
+      "color": "Painted",
+      "size": "Measures approximately 7.5\" x 15.5\" x 6.5\"",
+      "created_date": "2023-12-22T14:29:08.958Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 86,
+    "fields": {
+      "seller": 16,
+      "name": "Blue Hippo Figurine",
+      "description": "Has some minor wear. Please note, one foot sits off the table. Doesn't effect functionality!",
+      "price": "24.72",
+      "material": "Wood",
+      "color": "Painted - Acrylic Paint - Mixed colors - Blue",
+      "size": "Measures approximately 9.5\" x 3.5\" x 3\"",
+      "created_date": "2023-12-22T14:31:07.927Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 87,
+    "fields": {
+      "seller": 16,
+      "name": "Brass Standing Duck Figurine",
+      "description": "Vintage Brass Standing Duck with Open Bill - Quacking Duck Figurine",
+      "price": "16.00",
+      "material": "Brass",
+      "color": "Brass",
+      "size": "Measures approximately 5\" x 5.5\" x 2\"",
+      "created_date": "2023-12-22T14:37:42.036Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 88,
+    "fields": {
+      "seller": 16,
+      "name": "Brass Apple with Leaf Dish",
+      "description": "Vintage Brass Apple with Leaf Dish - Brass Apple Trinket Tray",
+      "price": "19.78",
+      "material": "Brass",
+      "color": "Brass",
+      "size": "Measures approximately 6.5\" x 7\" x 1.5\"",
+      "created_date": "2023-12-22T14:38:42.421Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 89,
+    "fields": {
+      "seller": 16,
+      "name": "Large Vintage Shell Bookends",
+      "description": "Has some wear and tarnishing. Heavy, 3.28kg/7.4lbs\n\nLarge Brass Vintage Shell Bookends - Vintage Heavy Brass Seashell Bookends",
+      "price": "109.99",
+      "material": "Brass",
+      "color": "Brass",
+      "size": "Measures approximately 7\" x 5.5\" x 3 1/8\"",
+      "created_date": "2023-12-22T14:40:19.140Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 90,
+    "fields": {
+      "seller": 17,
+      "name": "Magnesium Butter",
+      "description": "🌿 Our 100% Natural Magnesium Butter is crafted using Magnesium from the ancient Zechstein Seabed along with cold pressed butter and oils.\n\nDid you know Magnesium is part of over 300 biochemical reactions in the body?\nThis is why low magnesium levels are linked to many ailments, our body needs it!\n\nThis Magnesium Lotion is packaged in Amber Glass Jars, NOT plastic.\n\nUse just like you would any other lotion. Choose “Lavender Scent” to make a perfect bedtime lotion!\n\n🌿Cold Pressed, Unrefined Mango Butter is lighter than Shea Butter while still providing skin hydration and help fight damage.\n🌿Cold Pressed, Unrefined Grape Seed Oil absorbs quickly and moisturizes without clogging pores.\n🌿Magnesium Flakes from the Ancient Zechstein Seabed\n🌿Cold Pressed Babassu Oil is packed with fatty acids that nourish and soften skin.\n\nAll of our products are Made to Order so you never have to worry about receiving a product that isn’t fresh.\n\nProduct is for external use only.\n\nNot sure if Magnesium Lotion is for you? Check out our Ancient Trio Bath Salt Soak or Ancient Magnesium Oil!\n\nAt Purity Tree, natural means NATURAL!\nWe believe pure, quality products should be accessible and as affordable as possible.\n\nAll of our products are free of chemicals, GMO’s, and additives.\n\nPlease feel free to contact us anytime with any questions or concerns.\n\nOrders are crafted and shipped within three business days.\nThank you for supporting small business!",
+      "price": "14.99",
+      "material": "Raw Mango Butter, Cold Pressed Grapeseed Oil, Magnesium Flakes, Cold Pressed Babassu Oil, Spring Water",
+      "color": "",
+      "size": "8 oz",
+      "created_date": "2023-12-22T15:28:22.388Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 91,
+    "fields": {
+      "seller": 17,
+      "name": "Magnesium Oil Spray",
+      "description": "🌿 Our 100% Natural Magnesium Oil Spray is crafted using Magnesium from the ancient Zechstein Seabed. And it’s easy to use!\n\n*By definition, salts are an inorganic compound. This listing may not feature the phrase “Organic Magnesium Oil”, however you can rest assured that no chemicals are used at any point during the extraction process.*\n\nDid you know Magnesium is part of over 300 biochemical reactions in the body?\nThis is why low magnesium levels are linked to many ailments, our body needs it!\n\nThis Magnesium Spray is packaged in Amber Glass Bottles, NOT plastic.\nThese bottles provide a fine mist of Topical Magnesium for optimal coverage.\n\nTo use, simply spray then rinse after 20-30 minutes (if necessary to prevent dry skin).\n\nAll of our products are Made to Order so you never have to worry about receiving a product that isn’t fresh.\n\nOriginal Finish is recommended for those who are new to transdermal magnesium or want a “lighter touch”.\n\nProduct is for external use only.",
+      "price": "10.99",
+      "material": "Magnesium Flakes, Spring Water",
+      "color": "",
+      "size": "8 oz",
+      "created_date": "2023-12-22T15:29:51.975Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 92,
+    "fields": {
+      "seller": 17,
+      "name": "Natural Bath Salts",
+      "description": "🌿 Unwind with our Ancient Trio Bath Salt Soak, a 100% Natural Epsom Salt Alternative! Whether using as a foot soak, body soak, or muscle soak, your body will thank you.\n\nMade to Order and crafted using Magnesium Flakes, Dead Sea Salt, and Pink Himalayan Salt.\n\nAvailable as Bulk Bath Salts in a Jar or resealable pouch.\n\nIngredients:\n🌿Magnesium sourced from the ancient Zechstein Seabed absorb better than Epsom Salt. This is due to its molecular structure since, unlike Epsom Salt, it isn’t a sulfate.\n🌿 Dead Sea Salt & Pink Himalayan Salt also do wonders for the skin and contain over 80 trace minerals!\n\nIf you order a set and would like a variety, simply let us know using the “Personalization” section and consider it done!\n\nAvailable Styles:\n🛀 Original: Simply Salts.\n💤 Lavender: Naturally scented with Lavender Flowers.\n💐 Floral Trio: Forget-Me-Not, Gomphrena, and Strawflower Petals with Rose, Jasmine, and Vanilla Essential Oil\n🌹 Rose Garden: Rose Petals and Rose Essential Oils\n\nNatural mean NATURAL!\nNO Chemicals\nNO GMOs\nNO Additives\nSimply pure, quality ingredients from trusted sources.\n",
+      "price": "17.99",
+      "material": "Magnesium Flakes, Dead Sea Salt, Himalayan Salt, Optional Flowers, Optional Scents",
+      "color": "🛀 Original: Simply Salts. 💤 Lavender: Naturally scented with Lavender Flowers. 💐 Floral Trio: Forget-Me-Not, Gomphrena, and Strawflower Petals with Rose, Jasmine, and Vanilla Essential Oil 🌹 Rose Garden: Rose Petals and Rose Essential Oils",
+      "size": "4x 7oz Pouch",
+      "created_date": "2023-12-22T15:32:45.966Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 93,
+    "fields": {
+      "seller": 18,
+      "name": "Animal Crochet Rattle",
+      "description": "Celebrate the arrival of your little one with our heartwarming personalized baby rattles. Thoughtfully designed, each rattle features a delightful crochet exterior and a gentle bell inside that produces a pleasant sound with every shake. Adding a personal touch, you can customize the rattle with your baby's name, creating a cherished keepsake that will be treasured for years to come.\n\nOur personalized baby rattles are the perfect gift choice for baby showers or to welcome a newborn into the world. Beyond their adorable appearance, these rattles play a meaningful role in your baby's early development. The soft texture, soothing sound, and easy-to-grasp design provide endless delight, making them an ideal companion for your little one's joyous moments of exploration and play. Gift your bundle of joy a symbol of love with our personalized baby rattles, capturing the essence of this special time in their life.\n\nPlease message us and let us know the name of the baby and the animal you would like...\nDeer\nGiraffe\nLion\nHippo\nKoala Bear\nBunny Grey\nBunny Blue\nBunny White",
+      "price": "27.99",
+      "material": "Beech wood, cotton thread, polypropylene cotton",
+      "color": "Please message us which color suits your needs",
+      "size": "4x2x2.7",
+      "created_date": "2023-12-22T15:42:21.220Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 94,
+    "fields": {
+      "seller": 18,
+      "name": "Personalized Wooden Train Music Box",
+      "description": "Explore the charm of our personalized music box—an exquisite fusion of craftsmanship and delight. Whether it's a baby shower, Christmas celebration, or a child's birthday, this versatile creation is perfect for fostering your child's motor skills and musical appreciation. Additionally, it serves as an elegant and thoughtful gift for adults on special occasions.\n\n\n🎵 Product Features🎵\n\n- Customization: Tailor your music box with names, dates, or heartfelt messages.\n\n- Melody Options: Choose from a selection of tunes to suit individual tastes.\n\n- Enduring Quality: Crafted with premium materials for lasting durability.\n\n- Versatile Appeal: Beyond its musical enchantment, it adds a touch of sophistication to your decor.\n\n- Uncover the timeless allure of our personalized music box—a distinguished gift cherished by all age groups.\n\n\nA: Bear Seesaw\nSize: 4.3\" x 4.3\" x 5.5\"\nMusic: Castle in the Sky\nFeatures: Music + Seesaw start\n\nB: Ballet Girls\nSize: 4.3\" x 4.3\" x 6.7\"\nMusic: Castle in the Sky\nFeatures: Music + Ballerinas spin\n\nC: Castle\nSize: 4.3\" x 4.3\" x 5.9\"\nMusic: My Heart Will Go On\nFeatures: Music + trolley rotation\n\nD: Christmas train\nSize: 4.3\" x 4.3\" x 5.1\"\nMusic: Merry Christmas\nFeatures: music + train rotation\n\nE: Alishan Train\nSize: 4.3\" x 4.3\" x 5.1\"\nMusic: Castle in the Sky\nFeatures: music + train rotation\n\nF: Ferris Wheel (Square Base)\nSize: 4.3\" x 4.3\" x 5.1\"\nMusic: Castle in the Sky\nFeatures: music + ferris wheel rotation\n\nG: Carousel\nSize: 3.9\" x 3.9\" x 6.7“\nMusic: Castle in the Sky\nFeatures: Music & Trojan rotation\n\nH: Train\nSize: 4.3\" x 4.3\" x 5.1”\nMusic: Spirited Away\nFeatures: music & train rotation\n\nI: Bear Cake\nSize: 4.3\" x 4.3\" x 5.5\"\nMusic: Happy birthday\nFeatures: music + cake rotation\n\nJ: Ferris Wheel (Round Base)\nSize: 4.3\" x 4.3\" x 5.1\"\nMusic: Castle in the Sky\nFeatures: music + ferris wheel rotation\n\nK: Romantic Windmill\nSize: 4.3\" x 4.3\" x 5.5\"\nMusic: Castle in the Sky\nFeatures: music + windmill rotation\n\nL: Eiffel tower\nSize: 4.3\" x 4.3\" x 6.2\"\nMusic: Encounter\nFeatures: music + trolley rotation\n\nPlease message us which option from above you would like",
+      "price": "70.00",
+      "material": "Beech Wood",
+      "color": "Wooden",
+      "size": "Please pick options A-L from above",
+      "created_date": "2023-12-22T15:44:28.695Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 95,
+    "fields": {
+      "seller": 18,
+      "name": "Baby Bamboo Plate With Spoon",
+      "description": "Our Personalized Baby Plate Set are designed for little ones who are learning the art of self-feeding. Crafted with high-quality bamboo and food-grade silicone, this personalized plate set ensures safety, durability, and effortless cleaning.\n\nWith convenient dividers and a secure suction base, it keeps food neatly organized and in place, making mealtimes a breeze. The set includes a wooden spoon, ergonomically designed for easy grip and to stay in place while your child explores their newfound independence.\n\nMake mealtime cute, fun, and exclusive with this customizable baby and toddler dining set. It's the perfect combination of functionality, style, and joy, ensuring a delightful feeding experience for both parent and child.\n\nProduct Features:\n\n🍱 Smart Design: With three compartments and raised edges, our divided plate keeps food separate and minimizes spills, encouraging self-feeding.\n\n🍱 Eco-Friendly & Child-Safe: Our bamboo dinner plate prioritizes sustainability and safety, free from harmful chemicals for worry-free dining.\n\n🍱 Personalized Charm: Customize the plate with an icon or design of your choice, along with your child's name, creating a special keepsake or thoughtful gift.\n\n🍱 Perfect for Toddlers & Kids: Crafted for durability and practicality, this set suits children of all ages, ensuring enjoyable and hassle-free mealtimes.",
+      "price": "14.99",
+      "material": "Bamboo, Silicone",
+      "color": "Blue, Grey, White, Yellow, Pink. Please message us which color you would like",
+      "size": "Listed in photo",
+      "created_date": "2023-12-22T15:46:55.968Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 96,
+    "fields": {
+      "seller": 18,
+      "name": "Custom Baby Sweater",
+      "description": "Welcome to our store!\nStep into the world of personalized baby sweaters! Each sweater is meticulously hand embroidered with your child's name in cursive on the chest or back. We offer your choice of chunky or extra chunky yarns to make each sweater unique.\n\nEach one-of-a-kind heirloom is customized and hand-embroidered on a high-quality, super soft, 100% cotton, oversized sweater (truly handmade by you!)! !!! Every stitch is a labor of love.\n\nOur personalized sweaters make extraordinary gifts, perfect for baby welcome parties, delightful holiday surprises, joyous birthday celebrations, heartwarming group photos, precious milestone moments, or a unique way to say \"Congratulations!\" ! Impress the new mom or mom-to-be.\n\nCustomized Details:\n\n\nPlease be sure to provide all necessary personalization details accurately. If there are any additional questions or important information that has not been submitted, we will contact you prior to the start of labor. If we do not respond within a week of receiving the information, unfortunately, we may need to cancel the order. Price will vary depending on size",
+      "price": "45.00",
+      "material": "Yarn",
+      "color": "Your pick!",
+      "size": "P (Preemie): Up to 5 pounds  NB (Newborn): 5 to 8 pounds  3 months: 8 to 12 pounds  6 months: 12 to 16 pounds  9 months: 16 to 20 pounds  12 months: 20 to 24 pounds  18 months: 24 to 28 pounds  24 months: 28 to 30 pounds  2T: 29 to 32 pounds  3T: 32 to 35 pounds  4T: 35 to 39 pounds  5T: 39 to 43 pounds",
+      "created_date": "2023-12-22T15:49:26.958Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 97,
+    "fields": {
+      "seller": 19,
+      "name": "Aerial Dancer Mobile",
+      "description": "A touch of lightness and colour in your home.\nSuspension, Hanging Mobile.\nA flight that invites you to relax, to dream.\nThe dancers, made of silk paper and cardboard, are so light that they strart to move with the smallest draught.\n\nWarning: This is a decorative mobile. Babies should not have them in their mouth. The silk paper might fade.\n\nEach dancer is around 15cm.\nThe wooden support measures around 30cm each stick.\n\nThis mobile soothes babies as well as adults. It shall decorate any room of your home.",
+      "price": "40.00",
+      "material": "tissue paper, wood",
+      "color": "Mixed",
+      "size": "Width: 30 centimeters Height: 30 centimeters Depth: 30 centimeters",
+      "created_date": "2023-12-22T15:54:15.387Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 98,
+    "fields": {
+      "seller": 19,
+      "name": "Black And White Dancer Mobile",
+      "description": "A touch of lightness and colour in your home.\nSuspension, Hanging Mobile.\nA flight that invites you to relax, to dream.\nThe dancers, made of silk paper and cardboard, are so light that they strart to move with the smallest draught.\n\nWarning: This is a decorative mobile. Babies should not have them in their mouth. The silk paper might fade.\n\nEach dancer is around 15cm.\nThe wooden support measures around 30cm each stick.",
+      "price": "40.00",
+      "material": "tissue paper, wood",
+      "color": "Black and White",
+      "size": "Each dancer is around 15cm. The wooden support measures around 30cm each stick.",
+      "created_date": "2023-12-22T15:58:25.899Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 99,
+    "fields": {
+      "seller": 19,
+      "name": "Nighttime Dancing With Planets Mobile",
+      "description": "A touch of lightness and colour in your home.\nSuspension, Hanging Mobile.\n\nA flight that invites you to relax, to dream.\n\nThe dancers, made of silk paper and cardboard, are so light that they strart to move with the smallest draught.\n\nWarning: This is a decorative mobile. Babies should not have them in their mouth. The silk paper might fade.\nThe dancer is around 15cm.\nThe wooden support measures around 26 cm each stick.",
+      "price": "34.00",
+      "material": "Paper, Wood",
+      "color": "Varies",
+      "size": "Width: 25 centimeters Height: 28 centimeters Depth: 25 centimeters",
+      "created_date": "2023-12-22T16:01:08.571Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 103,
+    "fields": {
+      "seller": 20,
+      "name": "Duo Modern Hanging Bird Feeder",
+      "description": "Divided down the middle by the roof structure, each of the two separate sides holds a perforated aluminum screen for bird seed. The screens simply rest on the two stainless steel rods which are inserted through the piece. These rods also serve as perches for birds, along with two others of different lengths. The Longest is 22\" wide.\n\nThe pieces are designed to hang by twin ropes of galvanized steel wire, approximately 20\" long. Each of these support ropes are designed to rest under the angle of the two bent roofs, coming together at the top in two loops.\n\nThese pieces are each treated with spray primer and enamel. Although they are pictured here in only select colors, they can be easily finished in any color you'd prefer.",
+      "price": "150.00",
+      "material": "Steel, stainless steel, aluminum",
+      "color": "Yellow",
+      "size": "The \"Duo\" series of bird feeders measure 14\" tall X 18\" wide.",
+      "created_date": "2024-01-01T16:38:42.532Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 104,
+    "fields": {
+      "seller": 20,
+      "name": "Asterisk - Modern Bird Feeder",
+      "description": "The \"Asterisk\" series of bird feeders measure 15\" in diameter X 4\" deep.\n\nThese pieces are each treated with spray primer and enamel. Although they are pictured here in only select colors, but they can be easily finished in any color you'd prefer.",
+      "price": "150.00",
+      "material": "steel, stainless steel, aluminum",
+      "color": "Orange",
+      "size": "15\" in diameter X 4\" deep",
+      "created_date": "2024-01-01T19:38:48.880Z"
+    }
+  },
+  {
+    "model": "pixoapi.collectible",
+    "pk": 105,
+    "fields": {
+      "seller": 20,
+      "name": "Drop - Modern Bird Feeder",
+      "description": "The design for these 'Drop' bird feeders is something I've wanted to realize for a long time. My goal was to design something that was simpler to make yet still interesting looking, so that I could offer it at a lower price. These welded steel feeders are made entirely by hand. They are 12\" in height, 6\" wide. and 4\" deep.\n\nThe stainless steel screen, which holds the seed, is welded to two stainless steel rods. These rods fit into grooves at the corners of the piece. The rods hold the seed screen in place much like a hammock, and also serve as perches for birds. The entire screen and rod section is removable for cleaning.\n\nThe steel is treated with primer before being sprayed with Rustoleum enamel. They can be finished in a variety of colors if you are interested. Just Google 'Rustoleum spray enamel' for color chart and simply indicate the different color preference when ordering.",
+      "price": "75.00",
+      "material": "steel, stainless steel",
+      "color": "Pale Blue",
+      "size": "They are 12\" in height, 6\" wide. and 4\" deep.",
+      "created_date": "2024-01-01T19:40:56.715Z"
+    }
+  }
 ]

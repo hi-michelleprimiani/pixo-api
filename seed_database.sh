@@ -13,4 +13,3 @@ python3 manage.py loaddata collectibles
 python3 manage.py loaddata categories
 python3 manage.py loaddata collectiblecategories
 python3 manage.py loaddata imagegalleries
-python3 manage.py loaddata favorites
