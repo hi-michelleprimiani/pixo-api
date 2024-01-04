@@ -143,54 +143,49 @@ class CollectibleView(ViewSet):
         Response: Serialized updated Collectible data with HTTP 204 status on successful update, 
                 HTTP 400 Bad Request if data is invalid, or HTTP 404 Not Found if the Collectible doesn't exist.
         """
-        return Response(None, status=status.HTTP_204_NO_CONTENT)
-        try:
-            collectible = Collectible.objects.get(pk=pk)
 
-            # Initialize the serializer with the retrieved object and incoming data.
-            # 'partial=True' allows partial update of the object fields.
-            serializer = CollectibleSerializer(
-                collectible, data=request.data, partial=True)
-            if serializer.is_valid():
-                collectible.name = serializer.validated_data.get(
-                    'name', collectible.name)
-                collectible.description = serializer.validated_data.get(
-                    'description', collectible.description)
-                collectible.price = serializer.validated_data.get(
-                    'price', collectible.price)
-                collectible.material = serializer.validated_data.get(
-                    'material', collectible.material)
-                collectible.color = serializer.validated_data.get(
-                    'color', collectible.color)
-                collectible.size = serializer.validated_data.get(
-                    'size', collectible.size)
+        collectible = Collectible.objects.get(pk=pk)
 
-                collectible.save()
+        # Initialize the serializer with the retrieved object and incoming data.
+        # 'partial=True' allows partial update of the object fields.
+        serializer = CollectibleSerializer(
+            collectible, data=request.data, partial=True)
+        if serializer.is_valid():
+            collectible.name = serializer.validated_data.get(
+                'name', collectible.name)
+            collectible.description = serializer.validated_data.get(
+                'description', collectible.description)
+            collectible.price = serializer.validated_data.get(
+                'price', collectible.price)
+            collectible.material = serializer.validated_data.get(
+                'material', collectible.material)
+            collectible.color = serializer.validated_data.get(
+                'color', collectible.color)
+            collectible.size = serializer.validated_data.get(
+                'size', collectible.size)
 
-                # Delete existing ImageGallery entries related to this collectible.
-                ImageGallery.objects.filter(collectible=collectible).delete()
+            collectible.save()
 
-                # Create new images and ImageGallery entries
-                images_data = request.data.get('images', [])
-                for image_data in images_data:
-                    new_image = Image.objects.create(
-                        img_url=image_data.get('img_url'))
-                    ImageGallery.objects.create(
-                        collectible=collectible, image=new_image)
+            # Delete existing ImageGallery entries related to this collectible.
+            ImageGallery.objects.filter(collectible=collectible).delete()
 
-                # Handling categories update associated with collectible
-                category_data = request.data.get('categories', [])
-                collectible.categories.set(category_data)
+            # Create new images and ImageGallery entries
+            images_data = request.data.get('images', [])
+            for image_data in images_data:
+                new_image = Image.objects.create(
+                    img_url=image_data.get('img_url'))
+                ImageGallery.objects.create(
+                    collectible=collectible, image=new_image)
 
-                # Return the updated collectible
-                return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
+            # Handling categories update associated with collectible
+            category_data = request.data.get('categories', [])
+            collectible.categories.set(category_data)
 
-            # If the data is not valid, return 404
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            # Return the updated collectible
+            return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
 
-        # If the collectible does not exist, return 404
-        except Collectible.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
+        # If the data is not valid, return 404
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
         """
